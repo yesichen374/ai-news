@@ -1,79 +1,8 @@
 <!doctype html>
-<html lang="zh-CN">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<meta name="color-scheme" content="light">
-<meta name="description" content="2026年10月27日 AI 工程晚报：GPT-6.1 Terra 上线，Tibo Day 22 交付与 Reset 预测。">
-<title>AI 工程晚报 · 2026.10.27</title>
-<style>
-:root{--bg:#f3f6fa;--paper:#fff;--ink:#192a3d;--muted:#62738a;--line:#dce5ef;--blue:#225eb4;--navy:#143250;--subtle:#ecf3fc}
-*{box-sizing:border-box}
-html{scroll-behavior:smooth}
-body{margin:0;background:var(--bg);color:var(--ink);font:14px/1.7 -apple-system,BlinkMacSystemFont,"Segoe UI","Microsoft YaHei","PingFang SC",sans-serif;-webkit-font-smoothing:antialiased}
-a{color:var(--blue);text-underline-offset:3px}
-a:focus-visible{outline:2px solid var(--blue);outline-offset:3px}
-.page{max-width:900px;margin:0 auto;padding:25px 24px 44px}
-.mast{display:flex;justify-content:space-between;align-items:baseline;gap:16px;border-bottom:1px solid var(--line);padding:0 0 14px}
-.logo{color:var(--blue);font-weight:800;letter-spacing:.12em;font-size:11px}
-.date{font-size:12px;color:var(--muted)}
-.hero{padding:28px 0 18px}
-h1{font-size:clamp(30px,4.6vw,43px);line-height:1.2;letter-spacing:-.04em;margin:0 0 10px}
-.hero p{margin:0;color:var(--muted);font-size:12px}
-.summary{display:grid;grid-template-columns:1.15fr 1fr 1fr;gap:10px;margin-bottom:23px}
-.metric{background:var(--paper);border:1px solid var(--line);border-radius:12px;padding:16px}
-.metric:first-child{background:var(--navy);border-color:var(--navy);color:white}
-.metric small{display:block;color:var(--muted);font-size:11px;font-weight:600}
-.metric:first-child small{color:#c5d7ea}
-.metric strong{display:block;font-size:21px;margin:5px 0;line-height:1.3;letter-spacing:-.03em}
-.metric p{margin:0;font-size:11px;color:var(--muted)}
-.metric:first-child p{color:#d1dfed}
-h2{font-size:17px;margin:23px 0 10px}
-.card{border:1px solid var(--line);background:var(--paper);border-radius:14px;padding:22px 24px;margin:0 0 12px}
-.tag{font-size:11px;color:var(--blue);font-weight:800;letter-spacing:.05em}
-h3{font-size:20px;letter-spacing:-.02em;line-height:1.45;margin:7px 0 11px}
-.card p,.section p{font-size:13px;margin:8px 0;color:#405269}
-.keypoints{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:15px}
-.point{background:var(--subtle);padding:12px 14px;border-radius:9px}
-.point b{display:block;font-size:14px}
-.point span{display:block;font-size:12px;color:#445a73;margin-top:4px}
-.links{margin:12px 0 0;font-size:12px}
-.links a{margin-right:14px}
-.section{border:1px solid var(--line);background:#fff;border-radius:14px;padding:18px 22px}
-.section strong{color:var(--ink)}
-.forecast{border-radius:14px;background:var(--navy);color:white;padding:21px 23px;margin-top:22px}
-.forecast h2{margin:0 0 11px;font-size:17px}
-.chances{display:grid;grid-template-columns:1fr 1fr;gap:10px}
-.chance{border:1px solid #ffffff30;border-radius:10px;padding:11px 13px;background:#ffffff08}
-.chance small{display:block;color:#c8d9e8;font-size:11px}
-.chance strong{display:block;font-size:28px;line-height:1.35;letter-spacing:-.03em}
-.forecast p{margin:13px 0 0;color:#d6e2ee;font-size:12px}
-.footer{border-top:1px solid var(--line);margin-top:21px;padding-top:13px;color:var(--muted);font-size:11px}
-.footer p{margin:5px 0}
-code{font:.94em ui-monospace,SFMono-Regular,Consolas,monospace}
-@media(max-width:680px){.page{padding:17px 14px 32px}.mast{align-items:center}.summary{grid-template-columns:1fr 1fr}.metric:first-child{grid-column:1/-1}.metric{padding:13px}.metric strong{font-size:18px}.metric:first-child strong{font-size:25px}.card,.section{padding:17px}.keypoints{grid-template-columns:1fr}.forecast{padding:17px}.chance strong{font-size:24px}h3{font-size:18px}}
-@media print{body{background:white}.page{max-width:none;padding:8mm}.metric,.card,.section,.forecast{break-inside:avoid}.forecast,.metric:first-child{print-color-adjust:exact;-webkit-print-color-adjust:exact}}
-</style>
-</head>
-<body><main class="page">
-<div class="mast"><div class="logo">AI / ENGINEERING BRIEF</div><div class="date">2026.10.27 · 周二 · 北京时间</div></div>
-<header class="hero"><h1>今天最值得看的，<br>是新模型的成本变化。</h1><p>核查截至北京时间 22:07 · 约 1 分钟阅读 · 官方原始来源优先</p></header>
-<div class="summary" aria-label="关键状态">
-<div class="metric"><small>今天的实质新增</small><strong>GPT-6.1 Terra</strong><p>已开放 Codex / Work / API；功能交付，非 Reset</p></div>
-<div class="metric"><small>Pro 100 / 200 / 500 的 5h 限额</small><strong>仍无五小时窗口</strong><p>官方现行政策未改变</p></div>
-<div class="metric"><small>今日新增 Reset / Banked</small><strong>未核实到</strong><p>Day 21 重置是旧消息，不重复计入</p></div>
-</div>
-<h2>今日唯一确认的重大工程新增</h2>
-<article class="card">
-<div class="tag">01 · OPENAI / TIBO DAY 22 · 官方确认</div>
-<h3>GPT-6.1 Terra 上线：Sol 一半 API 单价，更适合高频任务</h3>
-<p>OpenAI 于美西 10 月 26 日发布 GPT-6.1 Terra；Tibo 在北京时间 <b>10 月 27 日 03:24</b> 发出 Day 22 帖文。新模型已可用于 ChatGPT Work、Codex 和 API（模型 ID <code>gpt-6.1-terra</code>），强调屏幕理解、电脑操作与自然写作。</p>
-<div class="keypoints"><div class="point"><b>API 单价：输入 $1 / 输出 $5</b><span>每百万 token；缓存输入 $0.05。标准单价约为 GPT-6.1 Sol 的一半；长上下文请求有额外阶梯价格。</span></div><div class="point"><b>工程建议：先分流，别全量替换 Sol</b><span>把资料处理、界面操作、常规代码任务做 A/B 对比。OpenAI 仍建议复杂编程优先 Sol / Astra；调用工具应使用 Responses API。</span></div></div>
-<p>官方自测 Terminal-Bench 4.0 最大推理档得分 50.3%，优于 GPT-5.6 Terra 的 21.5%；该成绩不是用户项目的质量保证。Tibo 称相对 Sol 有约 2 倍使用效率，不能理解为账户额度自动翻倍。</p>
-<div class="links"><a href="https://x.com/thsottiaux/status/2114800277677092936" target="_blank" rel="noopener noreferrer">Tibo Day 22 原帖 ↗</a><a href="https://openai.com/index/introducing-gpt-6-1-terra/" target="_blank" rel="noopener noreferrer">OpenAI 发布公告 ↗</a><a href="https://developers.openai.com/api/docs/models/gpt-6.1-terra" target="_blank" rel="noopener noreferrer">API 型号与定价 ↗</a></div>
-</article>
-<h2>Tibo 到底交付了什么？</h2>
-<section class="section"><p><strong>Day 22（美西 10/26，北京 10/27）：已交付 GPT-6.1 Terra，属于新模型交付，不是 Global Reset，也不是 Banked Reset。</strong> 直接价值是成本更低、订阅额度覆盖更多常规任务；可用性与价格均有 OpenAI 官方页面佐证。<a href="https://x.com/thsottiaux/status/2114800277677092936">原帖 ↗</a></p><p><strong>Day 23（美西 10/27）：截至北京时间 22:07，尚未核实正式交付。</strong> 第三方追踪显示没有新增 Reset 记录，但不代表当天最终不会公布；不能将未公布项目预先算成交付。<a href="https://codexy.fyi/">非官方完整时间线 ↗</a></p></section>
-<section class="forecast"><h2>明天（北京时间 10 月 28 日）· 新 Reset 预测</h2><div class="chances"><div class="chance"><small>全新 Global Reset</small><strong>25%–40%</strong></div><div class="chance"><small>新发 Banked Reset</small><strong>2%–7%</strong></div></div><p>主观、非校准概率：① Tibo 的 28 天承诺是「功能改进或全员重置」，不是每天重置；② Day 20 和 Day 21 已出现连续 Reset，Day 22 通过 Terra 新模型完成交付；③ 截至本期未见 Day 23 对下一次 Reset 的直接承诺，也未见新 Banked 发放依据。个人正常周期刷新和旧重置重复到账均不计入。<a href="https://x.com/thsottiaux/status/2114800277677092936" style="color:#d7ebff">Day 22 来源 ↗</a></p></section>
-<footer class="footer"><p>固定额度核验：OpenAI 帮助中心仍写明 Pro 100 / 200 / 500 的 Work / Codex 无五小时使用窗口，但包含用量仍有限。<a href="https://help.openai.com/en/articles/20001516-managing-usage-with-gpt-6-astra-in-work-and-codex">官方帮助文档 ↗</a></p><p>今日未发现足够可靠、满足北京时间日期和工程影响门槛的第二条独立重大消息，故不为凑数添加旧闻。信息状态为核查时点快照，来源外链需联网；网页其余资源完全内联，可离线查看。</p></footer>
-</main></body></html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="light"><title>AI 工程晚报 · 2026.10.28</title><style>
+:root{--bg:#f4f7fb;--paper:#fff;--ink:#172b43;--muted:#64758a;--blue:#245ec1;--line:#dfe7ef;--navy:#143554}*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:14px/1.7 -apple-system,BlinkMacSystemFont,"Segoe UI","Microsoft YaHei","PingFang SC",sans-serif}a{color:var(--blue);text-underline-offset:3px}main{max-width:890px;padding:24px 25px 45px;margin:auto}.top{display:flex;justify-content:space-between;align-items:center;gap:12px;border-bottom:1px solid var(--line);padding:0 0 15px}.brand{font-size:12px;font-weight:800;letter-spacing:.08em;color:var(--blue)}.date{color:var(--muted);font-size:12px}header{padding:29px 0 21px}h1{font-size:clamp(29px,5vw,43px);line-height:1.19;letter-spacing:-.04em;margin:0 0 9px}header p{margin:0;color:var(--muted);font-size:13px}h2{font-size:18px;margin:24px 0 12px}.stats{display:grid;grid-template-columns:1.2fr 1fr 1fr;gap:11px}.stat{padding:17px 18px;border:1px solid var(--line);background:var(--paper);border-radius:13px}.stat:first-child{background:var(--navy);border-color:var(--navy);color:white}.stat small{display:block;color:var(--muted);font-size:11px}.stat:first-child small,.stat:first-child p{color:#c8d9eb}.stat strong{display:block;font-size:23px;line-height:1.3;margin:5px 0}.stat p{font-size:11px;margin:0;color:var(--muted)}.stories{display:grid;grid-template-columns:1fr 1fr;gap:11px}.story,.panel{padding:20px;border:1px solid var(--line);border-radius:13px;background:#fff}.eyebrow{font-size:11px;color:var(--blue);font-weight:800}.story h3{margin:7px 0;font-size:18px;line-height:1.4}.story p,.panel p{font-size:13px;color:#43536b;margin:8px 0}.source{font-size:12px}.forecast{background:var(--navy);color:white;padding:20px 22px;border-radius:14px;margin-top:20px}.forecast h2{margin:0 0 11px}.forecast-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}.odds{border:1px solid #ffffff30;border-radius:9px;padding:11px 13px}.odds small{display:block;color:#cbdceb;font-size:11px}.odds strong{font-size:27px}.forecast p{color:#d5e1ef;font-size:12px;margin:12px 0 0}.footer{border-top:1px solid var(--line);margin-top:21px;padding-top:12px;font-size:11px;color:var(--muted)}.footer p{margin:5px 0}@media(max-width:680px){main{padding:17px 14px 32px}header{padding:24px 0 19px}.stats{grid-template-columns:1fr 1fr}.stat:first-child{grid-column:1/-1}.stat{padding:14px}.stories{grid-template-columns:1fr}.story,.panel{padding:16px}.forecast{padding:17px}.odds strong{font-size:23px}}@media print{body{background:white}.stat,.story,.panel,.forecast{break-inside:avoid}}
+</style></head><body><main><div class="top"><div class="brand">AI / ENGINEERING BRIEF</div><div class="date">2026.10.28 · 周三 · 北京时间</div></div><header><h1>今天有一次已确认的<br>Codex Reset。</h1><p>截至北京时间 22:37 · 约 1 分钟阅读 · 严格区分公告和个人到账</p></header>
+<section class="stats"><div class="stat"><small>今日新 Global Reset</small><strong>官方宣布完成</strong><p>Tibo 14:29 发帖确认；不代表已独立核实所有账户到账</p></div><div class="stat"><small>Pro 100 / 200 / 500 的 5h 限额</small><strong>仍未恢复</strong><p>OpenAI 帮助中心仍明确写「无五小时限额」</p></div><div class="stat"><small>今日新 Banked Reset</small><strong>未确认</strong><p>不可将 Global Reset 算成可保存的 Banked</p></div></section>
+<h2>今天值得看的 2 件事</h2><section class="stories"><article class="story"><span class="eyebrow">01 · TIBO 本人 · 北京时间 10:42 / 14:29</span><h3>Day 23 的 Global Reset 已宣布完成</h3><p>Tibo 在北京时间 10:42 宣布「今天是 Reset」，并表示会在太平洋时间午夜前生效；14:29 再发帖确认「已完成」。这是官方本人确认发放，<b>不是 Banked Reset</b>；账户是否符合条件、余额是否刷新仍以个人 Usage 页面为准。</p><p><b>行动：</b>Codex/Work 的 Settings → Usage 查看余额和下一刷新日期；不要仅凭日期变化判断自己领到新的 Banked。</p><a class="source" href="https://x.com/thsottiaux/status/2115273064481218829">Tibo Day 23 原帖</a> · <a class="source" href="https://x.com/thsottiaux/status/2115330127886463244">完成确认</a></article><article class="story"><span class="eyebrow">02 · OPENAI 官方 · 北京时间 10/28 凌晨</span><h3>iCloud 邮件与日历插件开放连接</h3><p>ChatGPT 官方宣布 iCloud Mail 和 Calendar 插件面向全部套餐在网页、桌面端和 iOS 开放，可查询邮件、日程及修改日历事件。连接时使用 Apple 专用 App 密码，而非 Apple 主账户密码；两个服务需要分别连接。</p><p><b>行动：</b>依赖 Apple 邮件和日历的 Work 流程现在可评估接入，不需自行维护 IMAP/CalDAV 脚本；具体动作仍受插件权限限制。</p><a class="source" href="https://x.com/ChatGPT/status/2115139248458191070">ChatGPT 公告</a> · <a class="source" href="https://openai.com/products/release-notes/">OpenAI 发布说明</a></article></section>
+<h2>Tibo 到底交付了什么？</h2><section class="panel"><p><b>Day 23（美西 10/27，北京时间 10/28）：Global Reset。</b> 不是新模型或可积攒的 Reset 券。Tibo 在完成后说「明天有好消息」，但这不是下一次 Reset 的承诺。原始来源：<a href="https://x.com/thsottiaux/status/2115273064481218829">Day 23</a>、<a href="https://x.com/thsottiaux/status/2115330127886463244">完成跟帖</a>。</p><p><b>Day 24（美西 10/28）：截至本期未确认新的交付或 Reset。</b> iCloud 插件确实已经推出，但 Tibo 的 Day 23 帖子明确将当天挑战交付定为 Reset；不能把 iCloud 重复记成 Day 24 的新成果。</p><p><b>官方规则核对：</b>Global Reset 只覆盖该次活动选定的账户/额度，不保证全部账户；Pro 100/200/500 的 Banked 全额重置针对每周额度。详情：<a href="https://help.openai.com/en/articles/20001498-how-resets-work-in-codex">OpenAI Reset 规则</a>。</p></section>
+<section class="forecast"><h2>北京时间 10 月 29 日 · 新 Reset 预测</h2><div class="forecast-grid"><div class="odds"><small>全新 Global Reset</small><strong>25%–40%</strong></div><div class="odds"><small>新发 Banked Reset</small><strong>3%–8%</strong></div></div><p>主观、未校准：① 近四个已记录挑战日中 Day 20、21、23 为 Reset，Day 22 是 Terra，节奏偏频繁但并非固定；② Tibo 在 Day 23 完成后预告「明天有好消息」，没有明确提及 Reset；③ 未见明天的新 Banked 发放承诺。个人正常每周/五小时刷新不计入预测。</p></section><footer class="footer"><p>固定额度状态：<a href="https://help.openai.com/en/articles/20001516-managing-usage-with-gpt-6-astra-in-work-and-codex">OpenAI Pro 使用限额官方说明</a>；<a href="https://help.openai.com/en/articles/20001498-how-resets-work-in-codex">OpenAI Reset 与资格规则</a>。</p><p>日期以北京时间归档。Tibo 原帖在部分网页抓取环境会返回 403，正文据同步追踪页面及官方规则交叉核对；并未直接验证任一个人账户的余额。正文与 CSS 全内联，无 CDN/外部脚本/字体；外链仅用于核对来源。</p></footer></main></body></html>
