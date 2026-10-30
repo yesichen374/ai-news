@@ -4,30 +4,72 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <meta name="color-scheme" content="light">
-<meta name="description" content="2026年10月29日 AI 工程晚报：Pro/Business API额度补贴、Tibo Day24 Dot短信交付、Pro200旧额度期限、次日Reset预测。">
-<title>AI 工程晚报 · 2026.10.29</title>
+<meta name="description" content="2026年10月30日AI工程晚报：Codex和Work额度翻倍，Pro 200降额计划撤回，以及Tibo Day 25交付和次日Reset预测。">
+<title>AI 工程晚报 · 2026.10.30</title>
 <style>
-:root{--ink:#17263b;--muted:#65748b;--line:#dfe6f0;--paper:#fff;--bg:#f5f7fa;--blue:#2459a9;--deep:#142c47}
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--ink);font:14px/1.7 -apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Microsoft YaHei",sans-serif;-webkit-font-smoothing:antialiased}main{max-width:930px;margin:auto;padding:30px 26px 54px}a{color:var(--blue);text-underline-offset:3px;overflow-wrap:anywhere}a:focus-visible{outline:2px solid var(--blue);outline-offset:3px}.top{display:flex;align-items:center;justify-content:space-between;gap:14px;border-bottom:1px solid var(--line);padding-bottom:14px}.brand{letter-spacing:.12em;font-size:11px;font-weight:800;color:var(--blue)}.date{font-size:12px;color:var(--muted)}header{padding:30px 0 20px}h1{font-size:clamp(31px,5vw,44px);margin:0 0 9px;letter-spacing:-.04em;line-height:1.2}header p{margin:0;color:var(--muted);font-size:12px}.overview{display:grid;grid-template-columns:1.1fr 1fr 1fr;gap:10px}.metric{border:1px solid var(--line);border-radius:13px;background:var(--paper);padding:14px 16px}.metric.primary{background:var(--deep);color:#fff;border-color:var(--deep)}.metric small{font-size:11px;color:var(--muted)}.metric.primary small,.metric.primary p{color:#cbd9ea}.metric b{display:block;font-size:20px;line-height:1.32;margin:5px 0;letter-spacing:-.02em}.metric p{font-size:11px;color:var(--muted);margin:0}.section-head{display:flex;justify-content:space-between;align-items:baseline;gap:12px;margin:26px 0 11px}.section-head h2{margin:0;font-size:18px;letter-spacing:-.02em}.section-head span{font-size:11px;color:var(--muted)}.stories{display:grid;grid-template-columns:1fr 1fr;gap:11px}.story,.panel{background:var(--paper);border:1px solid var(--line);border-radius:14px;padding:19px}.eyebrow{font-size:11px;font-weight:750;color:var(--blue);letter-spacing:.02em}.story h3{font-size:19px;line-height:1.38;letter-spacing:-.018em;margin:7px 0 9px}.story p,.panel p{font-size:13px;color:#43546b;margin:8px 0}.action{padding-top:10px;border-top:1px solid var(--line)}.sources{font-size:12px;margin-top:10px}.sources a{display:inline-block;margin-right:13px}.panel strong{color:var(--ink)}.panel p:last-child{margin-bottom:0}.forecast{background:var(--deep);border-radius:15px;color:#fff;padding:21px 23px;margin-top:22px}.forecast h2{font-size:18px;margin:0 0 12px}.chancegrid{display:grid;grid-template-columns:1fr 1fr;gap:10px}.chance{background:#ffffff0c;border:1px solid #ffffff2c;border-radius:10px;padding:10px 13px}.chance small{font-size:11px;color:#cedbed;display:block}.chance b{font-size:29px;line-height:1.33;letter-spacing:-.03em}.forecast p{color:#d2e0ef;font-size:12px;margin:13px 0 0}.foot{margin-top:20px;border-top:1px solid var(--line);padding-top:12px;font-size:11px;color:var(--muted)}.foot p{margin:4px 0}@media(max-width:680px){main{padding:16px 14px 32px}header{padding:24px 0 17px}.overview{grid-template-columns:1fr 1fr}.metric.primary{grid-column:1/-1}.metric{padding:13px}.metric b{font-size:18px}.stories{grid-template-columns:1fr}.story,.panel{padding:16px}.forecast{padding:17px}.chance b{font-size:24px}.section-head{margin-top:22px}.top{align-items:flex-start}.date{white-space:nowrap}}@media print{body{background:#fff}main{max-width:none;padding:9mm}.story,.metric,.panel,.forecast{break-inside:avoid}.metric.primary,.forecast{print-color-adjust:exact;-webkit-print-color-adjust:exact}}
+:root{--bg:#f4f7fb;--paper:#fff;--ink:#172940;--mute:#61738a;--line:#dce5ee;--blue:#255dc0;--night:#173553;--accent:#d9e7ff}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font:14px/1.72 system-ui,-apple-system,"Microsoft YaHei","PingFang SC",sans-serif;-webkit-font-smoothing:antialiased}
+a{color:var(--blue);text-underline-offset:3px}
+a:focus-visible{outline:2px solid var(--blue);outline-offset:3px}
+main{max-width:960px;margin:0 auto;padding:25px 28px 45px}
+.top{display:flex;justify-content:space-between;gap:12px;align-items:center;padding-bottom:13px;border-bottom:1px solid var(--line)}
+.brand{color:var(--blue);font-weight:850;font-size:11px;letter-spacing:.14em}
+.date{color:var(--mute);font-size:12px}
+.hero{padding:31px 0 22px}
+h1{font-size:clamp(29px,5vw,43px);line-height:1.22;letter-spacing:-.045em;margin:0 0 9px}
+.hero p{color:var(--mute);font-size:12px;margin:0}
+.kpis{display:grid;grid-template-columns:1.15fr 1fr 1fr;gap:10px;margin-bottom:23px}
+.kpi{border:1px solid var(--line);background:var(--paper);border-radius:13px;padding:15px 17px}
+.kpi.major{background:var(--night);border-color:var(--night);color:#fff}
+.kpi small{color:var(--mute);font-size:11px;font-weight:700}
+.kpi.major small,.kpi.major p{color:#cce0f5}
+.kpi strong{display:block;font-size:clamp(19px,3vw,27px);line-height:1.3;margin:4px 0}
+.kpi p{font-size:11px;margin:0;color:var(--mute)}
+h2{font-size:17px;margin:23px 0 12px;letter-spacing:-.02em}
+.stories{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.story{background:var(--paper);border:1px solid var(--line);border-radius:14px;padding:20px}
+.no{font-size:11px;color:var(--blue);font-weight:800}
+.story h3{font-size:19px;line-height:1.4;margin:6px 0 10px}
+.story p{font-size:13px;color:#43546b;margin:0 0 10px}
+.link{display:inline-block;font-size:12px;margin-top:5px}
+.notice{border:1px solid var(--line);border-radius:14px;padding:19px 21px;background:#fff}
+.notice p{margin:5px 0;font-size:13px;color:#43546b}
+.notice strong{color:var(--ink)}
+.prediction{margin-top:23px;background:var(--night);color:#fff;border-radius:16px;padding:21px 24px}
+.prediction h2{margin:0 0 13px;font-size:18px}
+.chances{display:grid;grid-template-columns:1fr 1fr;gap:11px}
+.chance{padding:11px 13px;border:1px solid #ffffff2b;background:#ffffff0c;border-radius:10px}
+.chance small{display:block;color:#cbe0f2;font-size:11px}
+.chance strong{display:block;font-size:27px;letter-spacing:-.04em}
+.prediction p{color:#d5e2ee;font-size:12px;margin:13px 0 0}
+.foot{font-size:11px;color:var(--mute);border-top:1px solid var(--line);margin-top:23px;padding-top:13px}
+.foot p{margin:4px 0}
+@media(max-width:690px){main{padding:17px 14px 33px}.top{align-items:flex-start}.hero{padding:24px 0 18px}.kpis{grid-template-columns:1fr 1fr}.kpi.major{grid-column:1/-1}.kpi{padding:13px}.stories{grid-template-columns:1fr}.story{padding:16px}.story h3{font-size:18px}.notice{padding:16px}.prediction{padding:18px}.chance strong{font-size:24px}}
+@media print{body{background:white}main{padding:8mm;max-width:none}.story,.kpi,.notice,.prediction{break-inside:avoid}.kpi.major,.prediction{print-color-adjust:exact;-webkit-print-color-adjust:exact}}
 </style>
 </head>
-<body><main>
-<div class="top"><div class="brand">AI / ENGINEERING BRIEF</div><div class="date">2026.10.29 · 周四 · 北京时间</div></div>
-<header><h1>AI 工程晚报</h1><p>截至北京时间约 22:15 · 今日重要新增 2 条 · 原帖及官方文档可追溯 · 离线可读</p></header>
-<div class="overview">
-<div class="metric primary"><small>今日最直接的成本变化</small><b>Pro / Business 可申领 API 赠金</b><p>最高 $500／月；需要主动绑定 API 组织</p></div>
-<div class="metric"><small>Pro 100 / 200 / 500</small><b>仍无 5h 限额</b><p>Work / Codex 现行官方规则</p></div>
-<div class="metric"><small>今天新 Reset / Banked</small><b>均未确认</b><p>不把昨日 Global Reset 算成今天</p></div>
-</div>
-<div class="section-head"><h2>今天最值得看的 2 件事</h2><span>不重复旧闻，不凑数</span></div>
-<section class="stories">
-<article class="story"><span class="eyebrow">01 · 官方 API 更新 · 美西 10/28</span><h3>Pro / Business 订阅附赠 API 额度</h3><p>OpenAI 正式开放 API 赠金额度：Pro $100/$200/$500 分别可获对应金额的每计费周期 API 额度；Business 按席位累计，月度上限 $500。首次发放按剩余计费期折算，不会自动增加 Codex/Work 用量。</p><p class="action"><strong>行动：</strong>订阅满 7 天、账户及 API 组织同邮箱且具有所有者权限的用户，可在 ChatGPT「设置→账单」或 API Platform Billing 申领。<strong>此赠金不支付通过 API Key 使用的 Codex 用量</strong>。</p><div class="sources"><a href="https://developers.openai.com/api/docs/changelog" target="_blank" rel="noopener noreferrer">OpenAI API 10/28 更新 ↗</a><a href="https://help.openai.com/en/articles/20001626-api-credits-benefit-for-eligible-chatgpt-subscriptions" target="_blank" rel="noopener noreferrer">资格与领取规则 ↗</a></div></article>
-<article class="story"><span class="eyebrow">02 · Tibo Day 24 · 北京时间 10/29 09:49</span><h3>Dot 可直接收发短信与语音消息</h3><p>Tibo 确认 Day 24 交付：用户可通过 iMessage 或 RCS 给自己的 dot 发文字、照片、语音消息，dot 也能主动回复更新；Siri 可作为手机入口。目前<strong>只向美国 Pro 用户分批提供预览</strong>，并非全球全面开放。</p><p class="action"><strong>影响：</strong>省去进入 ChatGPT 应用的步骤，适合移动端快速派发长期 Agent 任务；非美国账户暂不应视为已获得功能。</p><div class="sources"><a href="https://x.com/thsottiaux/status/2115622002581188681" target="_blank" rel="noopener noreferrer">Tibo Day 24 原帖 ↗</a><a href="https://help.openai.com/en/articles/6825453-chatgpt-release-notes" target="_blank" rel="noopener noreferrer">OpenAI 官方上线说明 ↗</a></div></article>
+<body>
+<main>
+<div class="top"><div class="brand">AI / ENGINEERING BRIEF</div><div class="date">2026.10.30 · 周五 · 北京时间</div></div>
+<header class="hero"><h1>今日最大的变化：<br>额度不降，部分直接翻倍。</h1><p>截至北京时间约 22:16 · 只收录当日真实新增 · 约 1 分钟阅读</p></header>
+<section class="kpis" aria-label="额度状态">
+<div class="kpi major"><small>Codex / Work 包含额度</small><strong>部分套餐 ×2</strong><p>Pro 100 / Pro 500 / Business Premium；Pro 200 另有保护政策</p></div>
+<div class="kpi"><small>Pro 100 / 200 / 500 五小时限制</small><strong>仍未恢复</strong><p>官方帮助中心当前明确无五小时上限</p></div>
+<div class="kpi"><small>本日新增 Reset</small><strong>未核实</strong><p>Day 25 是额度政策交付，不是 Global / Banked Reset</p></div>
 </section>
-<div class="section-head"><h2>Tibo 到底交付了什么？</h2><span>按美西挑战日计数</span></div>
-<section class="panel"><p><strong>Day 24（美西 10/28）已交付：</strong>Dot 的 iMessage/RCS 消息通道，含文字、照片、语音与主动更新；作用是减少移动端唤起 Agent 的操作。<strong>当天是功能交付，不是 Reset。</strong> <a href="https://x.com/thsottiaux/status/2115622002581188681">原帖</a></p><p><strong>Day 25（美西 10/29）：</strong>截至北京时间 22:15，未核实新的交付、Global Reset 或 Banked Reset；没有将尚未发生的挑战日结果计入。</p></section>
-<div class="section-head"><h2>固定状态与成本期限</h2></div>
-<section class="panel"><p><strong>Pro 五小时窗口：</strong>官方仍明确 Pro 100 / 200 / 500 的 Work/Codex <strong>没有五小时用量限额</strong>，但继续有总使用额度。<a href="https://help.openai.com/en/articles/20001516-managing-usage-with-gpt-6-astra-in-work-and-codex">官方规则</a></p><p><strong>Pro 200 旧额度保护期：</strong>官方既有规则规定，符合资格的老订阅者可保留原包含额度至 <strong>2026-10-29</strong>，此后切换至较低额度，价格仍为每月 $200。此为今日到期提醒，<strong>不是今天新公布的政策</strong>；受影响用户核对邮件及用量页面。<a href="https://help.openai.com/en/articles/9793128-about-chatgpt-pro-tiers">官方期限</a></p></section>
-<section class="forecast"><h2>北京时间 10 月 30 日 · 新 Reset 预测</h2><div class="chancegrid"><div class="chance"><small>全新 Global Reset</small><b>25%–40%</b></div><div class="chance"><small>新发 Banked Reset</small><b>2%–7%</b></div></div><p>① Tibo 在 Day 23 完成重置后预告「明天有好消息」，Day 24 已用 Dot 功能兑现，不能据此再推断追加 Reset。② 近期 Day 20、21、23 多次 Global Reset，但 Day 24 改为交付；Day 25 截至本期无新承诺。③ 自 Day 3 之后缺乏再次普发 Banked 的直接信号。以上是主观低置信度估计，不包括个人五小时或每周正常刷新。</p></section>
-<footer class="foot"><p>时区口径：只收录截至北京时间 10/29 22:15 已可核实、在北京时间今日到达的更新；官方使用美西日期的公告另行标注。Tibo X 原帖由公开留存文本交叉校验，X 页面可能需要登录。</p><p>完整单文件 HTML，CSS 内联，无脚本、CDN、远程图片或远程字体；外链仅供来源核查。概率非 OpenAI 官方预测。</p></footer>
-</main></body></html>
+<h2>今天值得看的 2 个变化</h2>
+<section class="stories">
+<article class="story"><span class="no">01 · 官方公告 · 北京时间 10/30 00:56</span><h3>Pro 100、500 和 Business Premium：Work/Codex 额度提高</h3><p>Tibo 在挑战 Day 25 宣布，Pro 100/200/500 和 Business Premium 使用上限提升。官方进一步明确：Pro 100、Pro 500 的 Work/Codex 包含额度为原来的两倍；Business Premium 的翻倍由 Tibo 明确宣布。</p><p><b>实际行动：</b>先查看 Settings → Usage 再安排高消耗工程任务；这不是 API 免费 Token、不是全员 Reset，也不是所有聊天功能额度翻倍。</p><a class="link" href="https://x.com/thsottiaux/status/2115850175868727621" target="_blank" rel="noopener noreferrer">Tibo Day 25 原帖</a> · <a class="link" href="https://help.openai.com/en/articles/11391654-chatgpt-business-release-notes" target="_blank" rel="noopener noreferrer">OpenAI 官方更新</a></article>
+<article class="story"><span class="no">02 · 官方更正 · Pro 200 重点</span><h3>Pro 200 降额计划取消，老用户原额度保留</h3><p>OpenAI 撤回 9 月 29 日通知的 Pro 200 降额安排：原来就有高额度的订阅者维持原水平；此前采用较低额度的 Pro 200 用户增加一倍，追平高额度档。</p><p><b>实际影响：</b>对已有高额度的 Pro 200 用户，这是<strong>不降额，并非在原有高额度上再翻倍</strong>。核对账号实际剩余额度，避免把公告标题当作每个人都增加 100%。</p><a class="link" href="https://help.openai.com/en/articles/11391654-chatgpt-business-release-notes" target="_blank" rel="noopener noreferrer">官方精确条款</a></article>
+</section>
+<h2>Tibo 到底交付了什么？</h2>
+<section class="notice"><p><strong>Day 25（美西 10/29，北京时间 10/30）：已交付额度调整。</strong> Pro 100 / Pro 500 和 Business Premium 提高包含用量；Pro 200 撤销计划中的降低、低额度用户补齐。Dot 额外额度暂时维持、与默认额度分开。</p><p><strong>是否 Reset？否。</strong> 今天这条是长期用量政策调整，未发现新发 Global Reset 或 Banked Reset 的原始确认。Day 26 截至本期尚无经核实的交付，不把下一日的预期算作已完成。</p><p>核查：<a href="https://x.com/thsottiaux/status/2115850175868727621" target="_blank" rel="noopener noreferrer">Tibo 原帖</a> · <a href="https://help.openai.com/en/articles/20001516-managing-usage-with-gpt-6-astra-in-work-and-codex" target="_blank" rel="noopener noreferrer">Pro 无五小时窗口的官方说明</a></p></section>
+<section class="prediction"><h2>明天 10 月 31 日（北京时间）Reset 主观预测</h2>
+<div class="chances"><div class="chance"><small>全新 Global Reset</small><strong>20%–35%</strong></div><div class="chance"><small>新发 Banked Reset</small><strong>2%–6%</strong></div></div>
+<p>① Tibo 原始挑战承诺是每天「交付改善或全量重置」，并非天天都重置；② Day 25 刚兑现实质性包含额度调整，短期再 Reset 的必要性下降；③ 近期虽有 Day 20、21、23 的 Reset，但今天未查到下一次 Global 或 Banked 发放承诺。以上区间为未校准主观判断，不计个人五小时、每周自然刷新或昨日已发生的重置。</p></section>
+<footer class="foot"><p>来源日期按北京时间转换：Day 25 原帖发布于 2026-10-29 16:56 UTC，即北京时间 2026-10-30 00:56。OpenAI 官方帮助中心按其原始发布地标注 10 月 29 日。</p><p>这是 2026-10-30 的历史快照；页面正文与 CSS 全部内联，无 CDN、外部字体或图片。外链仅供核查来源。预测不代表 OpenAI 官方承诺。</p></footer>
+</main>
+</body>
+</html>
