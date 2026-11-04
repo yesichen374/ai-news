@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="dark">
+<title>AI 工程晚报 · 2026.11.04</title>
+<style>
+:root{font-family:Inter,"Segoe UI","PingFang SC","Microsoft YaHei",sans-serif;color:#ecf2ff;background:#0b1222}
+*{box-sizing:border-box}body{margin:0;background:radial-gradient(ellipse at 15% -15%,#1a3650 0,transparent 48%),#0b1222;line-height:1.68}
+main{width:min(790px,calc(100% - 34px));margin:0 auto;padding:44px 0 58px}
+header{border-bottom:1px solid #33435a;padding-bottom:22px}
+.kicker{font-size:12px;letter-spacing:.14em;color:#7ec8ea;font-weight:700}
+h1{font-size:clamp(30px,6vw,42px);line-height:1.25;margin:12px 0 6px;letter-spacing:-.02em}
+.subtitle{margin:0;color:#9babca;font-size:14px}
+.section-title{color:#a6b5d0;font-size:13px;font-weight:700;letter-spacing:.08em;margin:31px 0 10px}
+.news{background:#141f33;border:1px solid #2a3c56;border-radius:16px;padding:23px 24px;margin:12px 0}
+.news h2{font-size:19px;line-height:1.45;margin:0 0 10px}
+.news p{margin:0;color:#d6dfed;font-size:15px}
+.news .meta{margin-top:12px;font-size:12px;color:#90a5c2}
+a{color:#83cffb;text-decoration:none;border-bottom:1px dotted #72aecb}a:hover{color:#cdf0ff}
+.mini{padding:20px 24px;border:1px solid #344763;border-radius:14px;background:#111b2c;color:#cdd7e9}
+.mini p{margin:7px 0;font-size:14px}
+.mini strong{color:#f0f5ff}
+.stats{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:12px 0}
+.stat{border:1px solid #344763;border-radius:14px;padding:18px;background:#111b2c}
+.stat .name{font-size:13px;color:#aebcce}.stat .number{display:block;font-weight:750;font-size:30px;color:#f1f6ff;margin-top:6px}
+.note{color:#91a5be;font-size:13px;margin:13px 0 0}
+footer{border-top:1px solid #344763;color:#849ab4;font-size:12px;margin-top:30px;padding-top:18px}
+@media(max-width:520px){main{width:min(100% - 26px,790px);padding:28px 0 40px}.news{padding:17px}.mini{padding:17px}.stats{gap:9px}.stat{padding:15px}.stat .number{font-size:26px}}
+</style>
+</head>
+<body>
+<main>
+<header><div class="kicker">AI ENGINEERING BRIEF / BEIJING TIME</div><h1>AI 工程晚报</h1><p class="subtitle">2026 年 11 月 4 日 · 星期三 · 截至 22:15（UTC+8）｜约 1 分钟读完</p></header>
+<div class="section-title">今日值得关注 · 2 条</div>
+<article class="news"><h2>01｜腾讯 Hy4 开放商用入口，明确模型 API 价格</h2><p>腾讯今天宣布 Hy4 已在腾讯云 TokenHub、CodeBuddy 等产品中可用，并正通过 OpenRouter 等第三方平台开放 API；输入/输出分别约 $0.90/$2.70 每百万 Token，缓存输入约 $0.045。涉及模型替换或国内交付的项目可先做接口兼容、工具调用与质量实测；官方称权重及系统卡将在未来数日发布，不能视作今日已开源权重。</p><div class="meta">来源：<a href="https://en.prnasia.com/releases/apac/tencent-launches-hy4-joining-the-ranks-of-the-world-s-leading-open-source-ai-models-554689.shtml" target="_blank" rel="noopener noreferrer">腾讯 11 月 4 日官方新闻稿</a></div></article>
+<article class="news"><h2>02｜Claude Code 修复 Windows PowerShell 安全钩子拦截失效</h2><p>Anthropic 今天发布 Claude Code v2.1.318，修复 PowerShell 命令含类型转换、<code>param</code>、<code>using</code> 或属性时，Hook 返回退出码 2 却未能阻断执行的问题；同时修复部分会话恢复、认证与 MCP 稳定性缺陷。依赖 Windows Hook 做安全阻断或 CI 自动化的工程，应升级后针对拒绝执行场景回归测试。</p><div class="meta">来源：<a href="https://github.com/anthropics/claude-code/releases/tag/v2.1.318" target="_blank" rel="noopener noreferrer">Anthropic 官方 Release · 11 月 4 日 00:01 UTC</a></div></article>
+<div class="section-title">Codex / Work 固定监控</div>
+<section class="mini"><p><strong>Pro 五小时限额：</strong>尚未核实到 $100 / $200 / $500 恢复 5h 限额；OpenAI 当前 Reset 说明对 Pro 三档仅列“每周额度”作为 Banked Reset 覆盖对象。<a href="https://help.openai.com/en/articles/20001498-how-resets-work-in-codex" target="_blank" rel="noopener noreferrer">官方说明</a></p><p><strong>Tibo 到底交付了什么？</strong>已核实的最近一次是挑战 Day 28「Banked 2/2」（北京时间 11 月 2 日），属于可储存重置；截至今晚未核实到新的 Day N 交付、Global Reset 或新发 Banked Reset。历史帖：<a href="https://x.com/thsottiaux/status/2117035794678546764" target="_blank" rel="noopener noreferrer">Tibo 原帖</a>；<a href="https://quota-reset.com/" target="_blank" rel="noopener noreferrer">第三方记录（非官方到账凭证）</a>。</p><p><strong>服务：</strong>截至核查，OpenAI 官方状态页显示整体正常；不能据此保证每个账户无个别异常。<a href="https://status.openai.com/" target="_blank" rel="noopener noreferrer">服务状态</a></p></section>
+<div class="section-title">明日 11 月 5 日 · 主观预测</div>
+<div class="stats"><div class="stat"><div class="name">全新 Global Reset</div><span class="number">8%–18%</span></div><div class="stat"><div class="name">新发 Banked Reset</div><span class="number">1%–4%</span></div></div>
+<p class="note">判断依据：① Tibo 28 天挑战及两笔 Banked 承诺已完成；② 截至发稿未检索到下一次发放的明确承诺；③ 最近 Global Reset 为 10 月 28 日、Banked 为 11 月 2 日。仅预测新福利，个人 5h/weekly 自然刷新不算。</p>
+<footer>只收录北京时间当天可核实的工程相关新增。预测为主观区间而非 OpenAI 承诺；外部链接仅用于核对来源。本文件可离线阅读，所有页面样式内置，无外部资源依赖。</footer>
+</main>
+</body>
+</html>
