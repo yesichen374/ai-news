@@ -3,45 +3,38 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="color-scheme" content="dark">
-<title>AI 工程晚报 · 2026.11.04</title>
+<meta name="color-scheme" content="light dark">
+<title>AI 工程晚报｜2026-11-05</title>
 <style>
-:root{font-family:Inter,"Segoe UI","PingFang SC","Microsoft YaHei",sans-serif;color:#ecf2ff;background:#0b1222}
-*{box-sizing:border-box}body{margin:0;background:radial-gradient(ellipse at 15% -15%,#1a3650 0,transparent 48%),#0b1222;line-height:1.68}
-main{width:min(790px,calc(100% - 34px));margin:0 auto;padding:44px 0 58px}
-header{border-bottom:1px solid #33435a;padding-bottom:22px}
-.kicker{font-size:12px;letter-spacing:.14em;color:#7ec8ea;font-weight:700}
-h1{font-size:clamp(30px,6vw,42px);line-height:1.25;margin:12px 0 6px;letter-spacing:-.02em}
-.subtitle{margin:0;color:#9babca;font-size:14px}
-.section-title{color:#a6b5d0;font-size:13px;font-weight:700;letter-spacing:.08em;margin:31px 0 10px}
-.news{background:#141f33;border:1px solid #2a3c56;border-radius:16px;padding:23px 24px;margin:12px 0}
-.news h2{font-size:19px;line-height:1.45;margin:0 0 10px}
-.news p{margin:0;color:#d6dfed;font-size:15px}
-.news .meta{margin-top:12px;font-size:12px;color:#90a5c2}
-a{color:#83cffb;text-decoration:none;border-bottom:1px dotted #72aecb}a:hover{color:#cdf0ff}
-.mini{padding:20px 24px;border:1px solid #344763;border-radius:14px;background:#111b2c;color:#cdd7e9}
-.mini p{margin:7px 0;font-size:14px}
-.mini strong{color:#f0f5ff}
-.stats{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:12px 0}
-.stat{border:1px solid #344763;border-radius:14px;padding:18px;background:#111b2c}
-.stat .name{font-size:13px;color:#aebcce}.stat .number{display:block;font-weight:750;font-size:30px;color:#f1f6ff;margin-top:6px}
-.note{color:#91a5be;font-size:13px;margin:13px 0 0}
-footer{border-top:1px solid #344763;color:#849ab4;font-size:12px;margin-top:30px;padding-top:18px}
-@media(max-width:520px){main{width:min(100% - 26px,790px);padding:28px 0 40px}.news{padding:17px}.mini{padding:17px}.stats{gap:9px}.stat{padding:15px}.stat .number{font-size:26px}}
+:root{--bg:#f5f7fb;--fg:#17243a;--muted:#65748a;--card:#fff;--line:#dce4ed;--accent:#1c60af;--soft:#e9f2fc}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--fg);font:15px/1.75 -apple-system,BlinkMacSystemFont,"Segoe UI","Microsoft YaHei",sans-serif}
+main{max-width:790px;margin:0 auto;padding:28px 18px 56px}
+header{padding:5px 2px 14px;border-bottom:1px solid var(--line)}.eyebrow{font-size:12px;letter-spacing:.13em;color:var(--accent);font-weight:750}
+h1{margin:6px 0;font-size:clamp(26px,5vw,37px);letter-spacing:-.03em;line-height:1.3}h2{font-size:19px;margin:0 0 12px;line-height:1.4}
+p{margin:8px 0}small,.muted{color:var(--muted)}.intro{margin-top:10px;color:var(--muted);font-size:14px}
+section{margin:18px 0;padding:20px 23px;background:var(--card);border:1px solid var(--line);border-radius:15px}
+.item{padding:13px 0;border-bottom:1px solid var(--line)}.item:first-of-type{padding-top:0}.item:last-child{border-bottom:0;padding-bottom:0}
+.item h3{font-size:16px;margin:0 0 5px}.item p{margin:0}.tag{display:inline-block;font-size:11px;font-weight:700;color:var(--accent);background:var(--soft);border-radius:5px;padding:1px 6px;margin-right:7px}
+a{color:var(--accent);text-decoration:none;border-bottom:1px solid transparent}a:hover{border-color:currentColor}
+.metrics{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:13px}.metric{border:1px solid var(--line);border-radius:12px;padding:14px}.metric strong{display:block;font-size:25px;line-height:1.45}.metric span{font-size:12px;color:var(--muted)}
+.sources{font-size:13px}.sources a{overflow-wrap:anywhere}footer{font-size:12px;color:var(--muted);padding:12px 2px}
+@media (prefers-color-scheme:dark){:root{--bg:#0f1725;--fg:#e8f0fa;--muted:#afbed1;--card:#182438;--line:#324155;--accent:#8ec5ff;--soft:#203e62}}
+@media(max-width:480px){main{padding:19px 12px 35px}section{padding:16px 15px;border-radius:12px}.metrics{gap:8px}.metric{padding:11px}.metric strong{font-size:22px}}
+@media print{:root{--bg:#fff;--fg:#000;--card:#fff;--line:#bbb;--accent:#19436c;--soft:#eee}main{max-width:100%;padding:8mm}section{break-inside:avoid;margin:9px 0;padding:12px 16px}a{color:inherit} }
 </style>
 </head>
 <body>
 <main>
-<header><div class="kicker">AI ENGINEERING BRIEF / BEIJING TIME</div><h1>AI 工程晚报</h1><p class="subtitle">2026 年 11 月 4 日 · 星期三 · 截至 22:15（UTC+8）｜约 1 分钟读完</p></header>
-<div class="section-title">今日值得关注 · 2 条</div>
-<article class="news"><h2>01｜腾讯 Hy4 开放商用入口，明确模型 API 价格</h2><p>腾讯今天宣布 Hy4 已在腾讯云 TokenHub、CodeBuddy 等产品中可用，并正通过 OpenRouter 等第三方平台开放 API；输入/输出分别约 $0.90/$2.70 每百万 Token，缓存输入约 $0.045。涉及模型替换或国内交付的项目可先做接口兼容、工具调用与质量实测；官方称权重及系统卡将在未来数日发布，不能视作今日已开源权重。</p><div class="meta">来源：<a href="https://en.prnasia.com/releases/apac/tencent-launches-hy4-joining-the-ranks-of-the-world-s-leading-open-source-ai-models-554689.shtml" target="_blank" rel="noopener noreferrer">腾讯 11 月 4 日官方新闻稿</a></div></article>
-<article class="news"><h2>02｜Claude Code 修复 Windows PowerShell 安全钩子拦截失效</h2><p>Anthropic 今天发布 Claude Code v2.1.318，修复 PowerShell 命令含类型转换、<code>param</code>、<code>using</code> 或属性时，Hook 返回退出码 2 却未能阻断执行的问题；同时修复部分会话恢复、认证与 MCP 稳定性缺陷。依赖 Windows Hook 做安全阻断或 CI 自动化的工程，应升级后针对拒绝执行场景回归测试。</p><div class="meta">来源：<a href="https://github.com/anthropics/claude-code/releases/tag/v2.1.318" target="_blank" rel="noopener noreferrer">Anthropic 官方 Release · 11 月 4 日 00:01 UTC</a></div></article>
-<div class="section-title">Codex / Work 固定监控</div>
-<section class="mini"><p><strong>Pro 五小时限额：</strong>尚未核实到 $100 / $200 / $500 恢复 5h 限额；OpenAI 当前 Reset 说明对 Pro 三档仅列“每周额度”作为 Banked Reset 覆盖对象。<a href="https://help.openai.com/en/articles/20001498-how-resets-work-in-codex" target="_blank" rel="noopener noreferrer">官方说明</a></p><p><strong>Tibo 到底交付了什么？</strong>已核实的最近一次是挑战 Day 28「Banked 2/2」（北京时间 11 月 2 日），属于可储存重置；截至今晚未核实到新的 Day N 交付、Global Reset 或新发 Banked Reset。历史帖：<a href="https://x.com/thsottiaux/status/2117035794678546764" target="_blank" rel="noopener noreferrer">Tibo 原帖</a>；<a href="https://quota-reset.com/" target="_blank" rel="noopener noreferrer">第三方记录（非官方到账凭证）</a>。</p><p><strong>服务：</strong>截至核查，OpenAI 官方状态页显示整体正常；不能据此保证每个账户无个别异常。<a href="https://status.openai.com/" target="_blank" rel="noopener noreferrer">服务状态</a></p></section>
-<div class="section-title">明日 11 月 5 日 · 主观预测</div>
-<div class="stats"><div class="stat"><div class="name">全新 Global Reset</div><span class="number">8%–18%</span></div><div class="stat"><div class="name">新发 Banked Reset</div><span class="number">1%–4%</span></div></div>
-<p class="note">判断依据：① Tibo 28 天挑战及两笔 Banked 承诺已完成；② 截至发稿未检索到下一次发放的明确承诺；③ 最近 Global Reset 为 10 月 28 日、Banked 为 11 月 2 日。仅预测新福利，个人 5h/weekly 自然刷新不算。</p>
-<footer>只收录北京时间当天可核实的工程相关新增。预测为主观区间而非 OpenAI 承诺；外部链接仅用于核对来源。本文件可离线阅读，所有页面样式内置，无外部资源依赖。</footer>
+<header><div class="eyebrow">DAILY · AI ENGINEERING</div><h1>AI 工程晚报</h1><div class="muted">2026 年 11 月 5 日｜北京时间｜约 1 分钟读完</div><p class="intro">只收录当天新发生、对开发实际有影响的变化；海外 11 月 4 日晚间的发布按北京时间 11 月 5 日计入。</p></header>
+<section><h2>今日三条值得关注</h2>
+<article class="item"><h3><span class="tag">模型 / 成本</span>Devin 上线 SWE-2 Flash</h3><p>Cognition 于北京时间 11 月 5 日凌晨发布 SWE-2 Flash，已在 Devin Desktop 和 CLI 可用。官方称速度为 SWE-2 的约 3 倍、价格为其五分之一，并提供截至 11 月 30 日的免费试用；可用于低成本日常编码，但基准数字应以自己的仓库验证。<a href="https://cognition.com/blog/swe-2-flash" target="_blank" rel="noopener">官方公告</a></p></article>
+<article class="item"><h3><span class="tag">IDE 集成</span>GitHub Copilot 接入 Xcode 内置编码助手</h3><p>GitHub 在北京时间 11 月 5 日凌晨上线公开预览，要求 Xcode 27.3 beta 与 macOS Tahoe 26.6 或更新版本，所有 Copilot 套餐均支持；原有 Xcode 扩展仍是独立选项。iOS/macOS 开发团队可比较两种工作流。<a href="https://github.blog/changelog/2026-11-04-github-copilot-is-now-available-in-xcodes-coding-assistant/" target="_blank" rel="noopener">GitHub 更新日志</a></p></article>
+<article class="item"><h3><span class="tag">开发工具</span>Antigravity 原生预览 Jupyter Notebook</h3><p>官方账号北京时间今天宣布，Antigravity 文件查看器已能直接呈现 .ipynb 中的代码单元、Markdown、表格、图片及执行输出。涉及 Python 实验和数据分析的项目可减少外部切换；这是查看能力更新，不应误认为新增 Notebook 执行内核。<a href="https://x.com/antigravity/status/2118234632801910871" target="_blank" rel="noopener">官方原帖</a></p></article>
+</section>
+<section><h2>Tibo 到底交付了什么？</h2><p><strong>今日未核实到新的 Day N 交付或 Reset。</strong>此前 28 天挑战已结束，最后一项为北京时间 11 月 2 日的 <strong>Day 28 / Banked 2/2</strong>，属于可储存额度重置，不是自动 Global Reset。没有新公告就不把个人周期刷新当作发放。<a href="https://x.com/thsottiaux/status/2117035794678546764" target="_blank" rel="noopener">Day 28 原帖</a> · <a href="https://tibosay.com/" target="_blank" rel="noopener">第三方重置记录</a></p><p><strong>固定额度状态：</strong>截至本次核查，Pro $100 / $200 / $500 在 Work 和 Codex 中仍<strong>没有五小时使用限额</strong>，但仍有每周包含额度。<a href="https://help.openai.com/en/articles/20001516-managing-usage-with-gpt-6-astra-in-work-and-codex" target="_blank" rel="noopener">OpenAI 官方说明</a></p></section>
+<section><h2>11 月 6 日新增 Reset 主观预测</h2><div class="metrics"><div class="metric"><span>全新 Global Reset</span><strong>12%–25%</strong></div><div class="metric"><span>新发 Banked Reset</span><strong>1%–5%</strong></div></div><p>依据：Tibo 上次自动 Global Reset 距今约八天，频率窗口有所抬升，但没有新的直接承诺；两笔 Banked 已在 28 天挑战中发完，挑战结束后缺乏额外额度发放或服务故障补偿信号。上述为主观估算，个人自然刷新不计入。</p></section>
+<section class="sources"><h2>核验来源与边界</h2><p><a href="https://cognition.com/blog/swe-2-flash">Cognition 官方 11/04 公告</a> · <a href="https://github.blog/changelog/2026-11-04-github-copilot-is-now-available-in-xcodes-coding-assistant/">GitHub 11/04 公告</a> · <a href="https://x.com/antigravity/status/2118234632801910871">Antigravity 11/05 原帖</a> · <a href="https://help.openai.com/en/articles/20001516-managing-usage-with-gpt-6-astra-in-work-and-codex">OpenAI 额度说明</a> · <a href="https://quotatick.com/en">第三方时间线（辅助验证时区）</a></p></section>
+<footer>离线单文件 HTML · 无外链脚本、外链样式、外部字体或图片 · 新闻日期按 Asia/Shanghai 换算</footer>
 </main>
 </body>
 </html>
