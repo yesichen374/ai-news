@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="color-scheme" content="light dark">
+<meta name="description" content="2026年11月7日 AI 工程晚报：Grok API 输出水印默认启用；GitHub Copilot 代码审查配置 API 新增管理能力；Tibo 与 Codex Reset 状态。">
+<title>AI 工程晚报｜2026-11-07</title>
+<style>
+:root{color-scheme:light;--bg:#f3f6fa;--card:#fff;--text:#16243b;--muted:#607086;--line:#e2e9f1;--blue:#245ed5;--blue-soft:#eaf1ff;--green:#186c4d;--green-soft:#e8f6ef;--navy:#0e2040;--shadow:0 14px 40px rgba(23,44,80,.07)}
+*{box-sizing:border-box}html{font-size:16px;scroll-behavior:smooth}body{margin:0;background:var(--bg);font:400 15.5px/1.75 system-ui,-apple-system,"Segoe UI","Microsoft YaHei",sans-serif;color:var(--text);-webkit-font-smoothing:antialiased}a{color:var(--blue);text-decoration:none;overflow-wrap:anywhere}a:hover{text-decoration:underline}main{width:min(100% - 36px,810px);margin:42px auto 54px}header{background:linear-gradient(135deg,#0b1f3d,#1c4275);color:#fff;border-radius:20px;padding:29px 34px;box-shadow:var(--shadow)}.eyebrow{font-size:12px;letter-spacing:.16em;font-weight:700;color:#aacbff}h1{font-size:clamp(27px,4.3vw,37px);line-height:1.25;margin:9px 0 11px;font-weight:800;letter-spacing:-.03em}.sub{font-size:13px;color:#bcd0eb}.pill{display:inline-block;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.18);font-size:12px;padding:4px 11px;border-radius:999px;margin-top:16px}.section{background:var(--card);border:1px solid var(--line);border-radius:18px;margin-top:17px;padding:23px 28px;box-shadow:var(--shadow)}.section h2{font-size:17px;line-height:1.4;margin:0 0 15px;color:var(--navy)}.item{display:grid;grid-template-columns:34px 1fr;gap:11px}.item+.item{border-top:1px solid var(--line);padding-top:17px;margin-top:17px}.num{width:28px;height:28px;border-radius:9px;display:grid;place-items:center;font-weight:800;background:var(--blue-soft);color:var(--blue);font-size:13px}.item h3{font-size:16px;margin:0 0 5px;line-height:1.5}.item p,.section p{margin:0 0 7px}.src{font-size:12px;color:var(--muted)}.hint{margin-top:11px;background:var(--blue-soft);padding:11px 14px;border-radius:11px;font-size:13px}.small{font-size:13px;color:var(--muted)}.line{border-top:1px solid var(--line);margin:15px 0}.forecast{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:12px 0}.metric{border:1px solid var(--line);background:#f9fbff;padding:14px 16px;border-radius:12px}.metric label{display:block;font-size:12px;color:var(--muted)}.metric strong{font-size:26px;letter-spacing:-.03em;color:var(--navy);font-variant-numeric:tabular-nums}.status{display:flex;gap:9px;align-items:flex-start}.dot{flex:0 0 8px;height:8px;background:#8a9db8;border-radius:50%;margin-top:10px}.refs{font-size:12px;line-height:1.75;padding-left:19px;color:var(--muted);margin:10px 0 0}.refs li{margin:4px 0}footer{padding:19px 8px 0;text-align:center;color:var(--muted);font-size:12px}
+@media(max-width:520px){main{width:calc(100% - 20px);margin:12px auto 24px}header{padding:22px 21px;border-radius:15px}.section{padding:19px 18px;border-radius:15px;margin-top:12px}.forecast{gap:9px}.metric{padding:12px}.metric strong{font-size:23px}.item{grid-template-columns:29px 1fr;gap:8px}.num{width:25px;height:25px}body{font-size:14.5px;line-height:1.7}}
+@media(prefers-color-scheme:dark){:root{color-scheme:dark;--bg:#091321;--card:#121f31;--text:#e6edf9;--muted:#9fb0c6;--line:#2b3c54;--blue:#93b8ff;--blue-soft:#1c3151;--navy:#eaf2ff;--shadow:none}.metric{background:#17263b}.hint{color:#d9e8ff}}
+@media print{body{background:white;font-size:13px}main{width:100%;margin:0}header{color:#111;background:white;box-shadow:none;border:1px solid #ddd}.eyebrow,.sub{color:#555}.section{box-shadow:none;margin-top:10px;break-inside:avoid}a{color:#123d85}}
+</style>
+</head>
+<body>
+<main>
+<header>
+<div class="eyebrow">AI ENGINEERING · DAILY BRIEF</div>
+<h1>AI 工程晚报</h1>
+<div class="sub">2026 年 11 月 7 日 · 星期六 · 北京时间（UTC+8）</div>
+<div class="pill">仅记当天生效或按北京时间当天发布的实质更新</div>
+</header>
+<section class="section" aria-labelledby="today"><h2 id="today">今天值得关注的 2 条</h2>
+<article class="item"><div class="num">01</div><div><h3>Grok API 今天开始默认添加不可见文本水印</h3><p>SpaceXSI/xAI 官方文档规定，11 月 7 日起，Grok 4.3–4.7 及 4.20 系列共 7 个模型的 API 文本输出默认带水印，涵盖结构化输出和工具参数。请求格式不变；接入方可检查 <code>x-watermark</code> 响应头，有法律合规需要时由团队管理员评估能否关闭。</p><div class="src">官方依据：<a href="https://docs.x.ai/developers/advanced-api-usage/watermarking" target="_blank" rel="noopener noreferrer">SpaceXSI Output Watermarking（明确 11/7 生效）</a></div></div></article>
+<article class="item"><div class="num">02</div><div><h3>GitHub Copilot 代码审查配置支持 API 管理</h3><p>GitHub 新增 REST / GraphQL 管理能力，可在企业、组织或仓库层控制审查策略，并追溯评论引用的技能、MCP 与自定义指令；失败审查也增加自动重试。做 PR 审查自动化时先核对鉴权：企业、组织设置端点不支持 GitHub App 与细粒度 PAT。</p><div class="src">官方依据：<a href="https://github.blog/changelog/2026-11-06-copilot-code-review-api-management-and-review-overview-updates/" target="_blank" rel="noopener noreferrer">GitHub Changelog（美区 11/6；UTC 11/7 发布）</a></div></div></article>
+</section>
+<section class="section"><h2>Tibo 到底交付了什么？</h2><div class="status"><span class="dot"></span><div><p><strong>今天没有核实到新的 Day N 交付或 Reset。</strong>28 天挑战已结束；最近可核实的是 Day 28 的「Banked 2/2」，北京时间 11 月 2 日 07:27 宣布第二笔储存重置。它不是自动 Global Reset，具体到账需个人 Usage 核查。</p><div class="src"><a href="https://x.com/thsottiaux/status/2117035794678546764" target="_blank" rel="noopener noreferrer">Tibo Day 28 原帖</a> · <a href="https://help.openai.com/en/articles/20001498-how-resets-work-in-codex" target="_blank" rel="noopener noreferrer">OpenAI 重置机制说明</a></div></div></div>
+<div class="hint"><strong>Pro 五小时状态：</strong>OpenAI 官方当前说明 Pro $100 / $200 / $500 的 Work 与 Codex <strong>没有五小时用量限制</strong>，但仍有套餐包含用量及周额度。<a href="https://help.openai.com/en/articles/20001516-managing-usage-with-gpt-6-astra-in-work-and-codex" target="_blank" rel="noopener noreferrer">官方额度说明</a></div></section>
+<section class="section"><h2>明天 11 月 8 日 · 新 Reset 主观预测</h2><div class="forecast"><div class="metric"><label>全新 Global Reset</label><strong>10%–20%</strong></div><div class="metric"><label>新发 Banked Reset</label><strong>1%–4%</strong></div></div><p class="small">依据：① Tibo 最后明确的 Day 28「Banked 2/2」已在 11/2 兑现为公告，未见新的直接承诺；② 上次明确完成的 Global Reset 在 10/28，距今约 10 天，但不存在固定重置周期；③ OpenAI 明确称这类免费重置是非定期福利。个人 5h/weekly 自然刷新不计入预测。</p></section>
+<section class="section"><h2>来源与核查边界</h2><p class="small">仅使用官方发布或已明确生效的变更。Tibo X 原帖可追溯，但未核实任何新的普遍到账；“未核实到”不等于保证没有个别账号变动。GitHub 美国日期 11/6 的代码审查公告按 UTC 11/7 发布时间列入本期；不将旧版号更新、旧故障和未兑现预告凑作新闻。</p>
+<ol class="refs"><li><a href="https://docs.x.ai/developers/advanced-api-usage/watermarking">xAI：Output Watermarking</a></li><li><a href="https://github.blog/changelog/2026-11-06-copilot-code-review-api-management-and-review-overview-updates/">GitHub：Copilot code review API management</a></li><li><a href="https://x.com/thsottiaux/status/2117035794678546764">Tibo：Day 28/ Banked 2/2</a></li><li><a href="https://help.openai.com/en/articles/20001516-managing-usage-with-gpt-6-astra-in-work-and-codex">OpenAI：Work/Codex 五小时额度说明</a></li><li><a href="https://help.openai.com/en/articles/20001498-how-resets-work-in-codex">OpenAI：Codex Reset 分类与规则</a></li></ol></section>
+<footer>AI 工程晚报 · 2026-11-07 · 可完全离线阅读；仅点击来源时需要网络</footer>
+</main>
+</body>
+</html>
