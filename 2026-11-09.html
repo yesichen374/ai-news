@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<meta name="description" content="2026年11月9日AI工程晚报：GitHub故障、Codex额度与Reset预测。">
+<title>AI 工程晚报｜2026-11-09</title>
+<style>
+:root{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Microsoft YaHei",sans-serif;color:#1d2637;background:#f4f6fa;font-synthesis:none}
+*{box-sizing:border-box}body{margin:0}a{color:#215dbc;text-underline-offset:3px;overflow-wrap:anywhere}
+main{max-width:810px;margin:auto;padding:40px 23px 64px}
+.eyebrow{color:#637189;letter-spacing:.15em;font-size:12px;font-weight:800}
+h1{font-size:clamp(28px,5vw,42px);letter-spacing:-.035em;line-height:1.2;margin:12px 0 10px}
+.sub{color:#5e6e83;font-size:14px;line-height:1.8;margin:0 0 25px}
+h2{font-size:17px;margin:0 0 15px;letter-spacing:-.02em}
+.panel{background:#fff;border:1px solid #e0e6ee;box-shadow:0 9px 32px #2939560a;border-radius:18px;padding:23px;margin:15px 0}
+.news{display:grid;grid-template-columns:34px 1fr;gap:13px;margin-top:16px}
+.no{display:grid;place-items:center;border-radius:10px;background:#eaf1ff;color:#305aa3;font-weight:800;height:34px}
+.news h3{font-size:16px;line-height:1.45;margin:2px 0 7px}
+p{line-height:1.78;margin:6px 0;color:#425169;font-size:14px}
+.small{font-size:12px;color:#64738a}
+.state{display:inline-flex;align-items:center;gap:7px;border-radius:999px;background:#eaf4ef;color:#216447;font-size:12px;font-weight:700;padding:6px 11px}
+.dot{height:7px;width:7px;border-radius:50%;background:#36a16c}
+.note{border-left:3px solid #8aa5d5;padding-left:14px}
+.forecast{display:grid;grid-template-columns:1fr 1fr;gap:13px}
+.stat{padding:18px;border:1px solid #dee5ef;border-radius:14px;background:#f8faff}
+.stat span{display:block;font-size:12px;color:#687790}
+.stat strong{display:block;font-size:30px;letter-spacing:-.045em;margin-top:8px;color:#254f88}
+footer{font-size:12px;color:#748197;padding-top:14px;text-align:center;line-height:1.8}
+@media(max-width:540px){main{padding:25px 14px 42px}.panel{padding:18px;border-radius:15px}.news{grid-template-columns:29px 1fr;gap:10px}.no{height:29px}.stat{padding:13px}.stat strong{font-size:24px}}
+@media(prefers-color-scheme:dark){:root{background:#0e1420;color:#ecf1f9}.panel{background:#182234;border-color:#2c3a51;box-shadow:none}.sub,.small,footer{color:#a1aec2}p{color:#c2cbd9}a{color:#91b8ff}.no{background:#203b65;color:#b7d1ff}.state{background:#1b3c33;color:#9cddbd}.stat{background:#142033;border-color:#32435a}.stat strong{color:#a2c4ff}.stat span{color:#a5b2c4}.eyebrow{color:#abb9cc}}
+</style>
+</head>
+<body>
+<main>
+<div class="eyebrow">AI ENGINEERING BRIEF / 2026.11.09 / CST</div>
+<h1>AI 工程晚报</h1>
+<p class="sub">北京时间 11 月 9 日 · 约 1 分钟阅读 · 仅收录当天有直接工程影响的事项</p>
+<span class="state"><span class="dot"></span>今日 2 项已确认服务事件，均已恢复</span>
+<section class="panel">
+<h2>今日重点</h2>
+<div class="news"><div class="no">01</div><div><h3>GitHub 匿名请求出现 504，影响发布与 CI 下载</h3>
+<p>北京时间 13:59–17:09，GitHub 官方记录匿名流量异常，部分未登录请求和 Release 下载返回 504；已认证请求未受影响。使用匿名 GitHub 下载的构建脚本应核对失败记录，必要时重跑。<a href="https://www.githubstatus.com/incidents/c9px7cw2ghrs" target="_blank" rel="noopener noreferrer">官方故障公告</a></p></div></div>
+<div class="news"><div class="no">02</div><div><h3>GitHub Actions / Webhooks 延迟，现已恢复</h3>
+<p>北京时间 18:00–19:50，GitHub 官方确认 Actions 启动和 Webhook 投递延迟，随后公告故障解决。依赖自动构建、推送触发和 Pages 发布的项目建议核对当天的工作流是否完整执行。<a href="https://www.githubstatus.com/incidents/xxb3l2bm76dr" target="_blank" rel="noopener noreferrer">官方故障公告</a></p></div></div>
+</section>
+<section class="panel">
+<h2>Tibo 到底交付了什么？</h2>
+<p>截至今晚，<strong>未确认 11 月 9 日的新 Day N 交付、全新 Global Reset 或新发 Banked Reset</strong>。最近可追溯的是 Day 28「Banked 2/2」（北京时间 11 月 2 日），属于储存型 Reset 公告，非自动清空额度。<a href="https://x.com/thsottiaux/status/2117035794678546764" target="_blank" rel="noopener noreferrer">Tibo 原帖</a> · <a href="https://codexresets.com/" target="_blank" rel="noopener noreferrer">第三方追踪（非官方）</a></p>
+<p class="note"><strong>额度状态：</strong>OpenAI 现有文档仍将 Pro $100 / $200 / $500 的主 Codex 额度列为仅受周额度约束，未确认恢复 5 小时限额。<a href="https://help.openai.com/en/articles/20001498-how-resets-work-in-codex" target="_blank" rel="noopener noreferrer">官方规则</a></p>
+</section>
+<section class="panel">
+<h2>明日 Reset 主观预测 · 11 月 10 日</h2>
+<div class="forecast">
+<div class="stat"><span>全新 Global Reset</span><strong>8%–16%</strong></div>
+<div class="stat"><span>新发 Banked Reset</span><strong>1%–4%</strong></div>
+</div>
+<p>依据：① Tibo 今天没有可核实的新发放承诺；② 28 天挑战及两笔预告 Banked 均已结束；③ 今日故障属于 GitHub 而非 OpenAI 的容量或补偿事件。上次确认的自动 Global Reset 为北京时间 10 月 28 日，不能用个人额度自然刷新替代新 Reset。以上并非官方概率。</p>
+</section>
+<footer>只根据可核查的原始公告与明确标注的第三方追踪整理。所有外部链接仅用于来源核查；正文、样式和功能均可离线使用。<br>归档日期：2026-11-09 · Asia/Shanghai</footer>
+</main>
+</body>
+</html>
