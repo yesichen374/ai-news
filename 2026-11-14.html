@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>AI 工程简报｜2026 年 11 月 14 日</title>
+<style>
+:root{font-family:system-ui,-apple-system,"Segoe UI","Microsoft YaHei",sans-serif;color:#172331;background:#f3f6fa;font-synthesis:none}*{box-sizing:border-box}body{margin:0}a{color:#2469ae;text-underline-offset:3px;overflow-wrap:anywhere}a:hover{text-decoration-thickness:2px}.shell{width:min(920px,calc(100% - 30px));margin:0 auto}.hero{background:linear-gradient(120deg,#142439,#224a70);color:#fff;padding:44px 0 38px}.kicker{text-transform:uppercase;letter-spacing:.2em;font-size:12px;opacity:.75}.hero h1{font-size:clamp(29px,5vw,43px);line-height:1.2;margin:12px 0}.hero p{margin:0;color:#dce8f4;font-size:14px;line-height:1.8}main{padding:27px 0 48px}.lead{font-size:16px;line-height:1.9;margin:0 0 20px;color:#405168}.items{display:grid;gap:15px}.item,.status,.method{background:#fff;border:1px solid #dde5ef;border-radius:15px;padding:22px 24px;box-shadow:0 7px 22px rgba(20,42,70,.04)}.num{display:inline-block;font-size:12px;letter-spacing:.06em;color:#446e99;font-weight:750;margin-bottom:7px}.item h2{font-size:clamp(20px,3.5vw,24px);line-height:1.42;margin:0 0 10px}.item p,.status p,.method p{font-size:15px;line-height:1.85;margin:0 0 10px}.source{border-top:1px solid #edf0f5;padding-top:10px;font-size:13px;color:#55687d;line-height:1.8}.source a{margin-right:12px}.status{margin-top:20px}.status h3,.method h3{font-size:17px;margin:0 0 8px}.status strong{color:#285a86}.method{margin-top:14px;background:transparent;box-shadow:none}.method p{font-size:13px;color:#68768b;margin:0}footer{padding:22px 0;border-top:1px solid #dce3eb;color:#6a788b;font-size:12px}.links{display:flex;gap:18px;flex-wrap:wrap}.links a{font-size:13px}@media(max-width:540px){.hero{padding:30px 0}.item,.status,.method{padding:19px}.shell{width:min(920px,calc(100% - 24px))}}@media(prefers-color-scheme:dark){:root{color:#e4eaf1;background:#0b131d}.hero{background:linear-gradient(120deg,#0e1d2d,#1b3c58)}.lead{color:#afbdd0}.item,.status{background:#14202d;border-color:#29384b;box-shadow:none}.method{border-color:#29384b}.source{border-color:#2a3a4c;color:#a7b5c8}a{color:#91c5fb}.status strong{color:#a7cffa}footer{border-color:#29384b;color:#a7b5c8}.method p{color:#adbacb}}@media print{:root{background:white;color:black}.hero{background:#fff;color:#000;padding:15px 0;border-bottom:2px solid #333}.hero p{color:#444}.item,.status,.method{box-shadow:none;break-inside:avoid}a{color:#222}}
+</style>
+</head>
+<body>
+<header class="hero"><div class="shell"><div class="kicker">AI ENGINEERING DAILY / 全球动态</div><h1>AI 工程简报</h1><p>2026 年 11 月 14 日，星期六 · 北京时间 Asia/Shanghai · 约 1 分钟阅读</p></div></header>
+<main class="shell">
+<p class="lead"><strong>今日 2 件重要新增。</strong>严格按北京时间归档：美国 11 月 13 日上午发布的产品，落在北京时间 11 月 14 日；其余前几天旧闻不重复。</p>
+<section class="items" aria-label="今日要闻">
+<article class="item">
+<div class="num">01 / AGENT × 支付 / 官方发布</div>
+<h2>OpenAI 上线 ChatGPT Wallet：AI Agent 获得经用户授权的付款能力</h2>
+<p>OpenAI 于美国时间 11 月 13 日发布、北京时间 11 月 14 日开始对应的新功能，允许 dots Agent 在用户逐笔审阅、经生物识别授权后用令牌化卡信息付款；首批仅面向符合条件的美国成年 Pro 用户，尚非全球开放。</p>
+<p><strong>工程影响：</strong>Agent 正从查询走向真实交易。电商与预订系统可评估 Web Bot Auth、风控识别、付款确认和审计日志；不应假定所有网站或账户均已支持。</p>
+<div class="source">原始来源：<a href="https://openai.com/index/introducing-chatgpt-wallet/" rel="noopener noreferrer" target="_blank">OpenAI 官方公告（11/13，美区）</a><a href="https://techcrunch.com/2026/11/13/chatgpts-new-wallet-lets-ai-agents-shop-and-check-out-for-you/" rel="noopener noreferrer" target="_blank">TechCrunch 发布时间：11/13 08:00 PST（北京 11/14 00:00）</a></div>
+</article>
+<article class="item">
+<div class="num">02 / 全球云服务 / 官方恢复确认</div>
+<h2>Microsoft 365 全球故障：11 月 14 日确认全面恢复</h2>
+<p>微软于北京时间今天对应的周六声明，已恢复此前受影响的全部客户与地区；故障波及 Outlook、Teams、Copilot，且连带影响 OpenAI、Anthropic 的 Microsoft 365 连接器。微软把原因归于网络容量升级相关的技术问题，否认网络攻击或 AI Agent 导致。</p>
+<p><strong>工程影响：</strong>依赖第三方办公连接器的 Agent 流程仍有单点故障风险。建议检查过去两天失败的邮件、日历与自动化任务，补做重试并设计降级通道。</p>
+<div class="source">原始来源：<a href="https://x.com/MSFT365Status/status/2121485746334777593" rel="noopener noreferrer" target="_blank">Microsoft 365 Status 官方恢复声明</a><a href="https://www.cbsnews.com/news/microsoft-battling-major-outage/" rel="noopener noreferrer" target="_blank">CBS / AP，11 月 14 日恢复报道</a></div>
+</article>
+</section>
+<section class="status" aria-label="额度红线"><h3>Codex / ChatGPT Work 额度状态</h3><p><strong>Pro $100 / $200 / $500：官方仍写明不设 5 小时使用上限。</strong>套餐包含的使用额度及周期限制依然存在。今日未查到官方宣布恢复 5 小时限制的消息；这不是新的额度政策。</p><div class="source"><a href="https://help.openai.com/en/articles/20001516-managing-usage-with-gpt-6-astra-in-work-and-codex" target="_blank" rel="noopener noreferrer">OpenAI Help Center · 当前 Work/Codex 用量规则</a></div></section>
+<section class="method"><h3>核查说明</h3><p>新闻以北京日界线为准；公开网页仅用于来源核验，不参与离线阅读。旧闻、单个用户体验反馈、尚未实施的政策猜测与版本号流水账均未入选。来源链接可能需要网络才能打开。</p></section>
+</main>
+<footer><div class="shell"><div class="links"><a href="https://yesichen374.github.io/ai-news/">晚报首页</a><a href="https://yesichen374.github.io/ai-news/2026-11-14.html">2026-11-14 归档</a></div><p>AI 工程简报 · 独立离线 HTML · 无第三方脚本、字体或图片</p></div></footer>
+</body>
+</html>
