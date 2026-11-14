@@ -3,51 +3,35 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="color-scheme" content="dark">
-<title>AI 工程简报｜2026-11-13</title>
+<meta name="color-scheme" content="light dark">
+<title>AI 工程简报｜2026 年 11 月 14 日</title>
 <style>
-:root{color-scheme:dark;--bg:#0a1020;--card:#111c2f;--line:#293854;--ink:#edf4ff;--muted:#a3b5d0;--accent:#72d6c1;--blue:#91baff}
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(ellipse at 15% -5%,#19304b 0%,transparent 38%),var(--bg);font:16px/1.73 -apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Microsoft YaHei",sans-serif;color:var(--ink)}
-.wrap{max-width:850px;margin:0 auto;padding:48px 24px 60px}header{border-bottom:1px solid var(--line);padding-bottom:28px}.eyebrow{color:var(--accent);font-size:12px;letter-spacing:.19em;font-weight:750}h1{margin:8px 0 8px;font-size:clamp(28px,5vw,42px);line-height:1.22;letter-spacing:-.025em}.sub{color:var(--muted);font-size:14px}.statline{display:flex;flex-wrap:wrap;gap:8px;margin:20px 0 0}.pill{display:inline-block;border:1px solid var(--line);background:#15243b;color:#bed4ed;border-radius:999px;padding:4px 12px;font-size:12px}
-h2{font-size:15px;margin:32px 0 15px;color:#c5d7ed;letter-spacing:.04em}.news{display:grid;gap:13px}.item{background:var(--card);border:1px solid var(--line);border-radius:17px;padding:20px 22px;box-shadow:0 4px 20px #0002}.k{font-size:12px;color:var(--accent);font-weight:700;letter-spacing:.08em}.item h3{margin:5px 0 9px;font-size:19px;line-height:1.45}.item p{margin:0;color:#d5e2f1;font-size:14px;line-height:1.83}.source{margin-top:10px;font-size:12px;color:var(--muted)}a{color:var(--blue);text-decoration:none;text-underline-offset:3px}a:hover{text-decoration:underline}.status{border:1px solid #35534f;background:#112b30;padding:14px 18px;border-radius:14px;color:#d2ece8;font-size:14px}.status strong{color:#91ead6}footer{border-top:1px solid var(--line);margin-top:28px;padding-top:17px;font-size:12px;color:var(--muted)}footer p{margin:5px 0}strong{font-weight:720}
-@media(max-width:520px){.wrap{padding:28px 16px 42px}.item{padding:17px}.item h3{font-size:17px}.news{gap:10px}.sub{font-size:13px}h2{margin-top:25px}}
-@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+:root{font-family:system-ui,-apple-system,"Segoe UI","Microsoft YaHei",sans-serif;color:#172331;background:#f3f6fa;font-synthesis:none}*{box-sizing:border-box}body{margin:0}a{color:#2469ae;text-underline-offset:3px;overflow-wrap:anywhere}a:hover{text-decoration-thickness:2px}.shell{width:min(920px,calc(100% - 30px));margin:0 auto}.hero{background:linear-gradient(120deg,#142439,#224a70);color:#fff;padding:44px 0 38px}.kicker{text-transform:uppercase;letter-spacing:.2em;font-size:12px;opacity:.75}.hero h1{font-size:clamp(29px,5vw,43px);line-height:1.2;margin:12px 0}.hero p{margin:0;color:#dce8f4;font-size:14px;line-height:1.8}main{padding:27px 0 48px}.lead{font-size:16px;line-height:1.9;margin:0 0 20px;color:#405168}.items{display:grid;gap:15px}.item,.status,.method{background:#fff;border:1px solid #dde5ef;border-radius:15px;padding:22px 24px;box-shadow:0 7px 22px rgba(20,42,70,.04)}.num{display:inline-block;font-size:12px;letter-spacing:.06em;color:#446e99;font-weight:750;margin-bottom:7px}.item h2{font-size:clamp(20px,3.5vw,24px);line-height:1.42;margin:0 0 10px}.item p,.status p,.method p{font-size:15px;line-height:1.85;margin:0 0 10px}.source{border-top:1px solid #edf0f5;padding-top:10px;font-size:13px;color:#55687d;line-height:1.8}.source a{margin-right:12px}.status{margin-top:20px}.status h3,.method h3{font-size:17px;margin:0 0 8px}.status strong{color:#285a86}.method{margin-top:14px;background:transparent;box-shadow:none}.method p{font-size:13px;color:#68768b;margin:0}footer{padding:22px 0;border-top:1px solid #dce3eb;color:#6a788b;font-size:12px}.links{display:flex;gap:18px;flex-wrap:wrap}.links a{font-size:13px}@media(max-width:540px){.hero{padding:30px 0}.item,.status,.method{padding:19px}.shell{width:min(920px,calc(100% - 24px))}}@media(prefers-color-scheme:dark){:root{color:#e4eaf1;background:#0b131d}.hero{background:linear-gradient(120deg,#0e1d2d,#1b3c58)}.lead{color:#afbdd0}.item,.status{background:#14202d;border-color:#29384b;box-shadow:none}.method{border-color:#29384b}.source{border-color:#2a3a4c;color:#a7b5c8}a{color:#91c5fb}.status strong{color:#a7cffa}footer{border-color:#29384b;color:#a7b5c8}.method p{color:#adbacb}}@media print{:root{background:white;color:black}.hero{background:#fff;color:#000;padding:15px 0;border-bottom:2px solid #333}.hero p{color:#444}.item,.status,.method{box-shadow:none;break-inside:avoid}a{color:#222}}
 </style>
 </head>
 <body>
-<main class="wrap">
-<header>
-<div class="eyebrow">GLOBAL AI · ENGINEERING BRIEF</div>
-<h1>AI 工程简报 <span style="color:#91baff">11.13</span></h1>
-<div class="sub">2026 年 11 月 13 日 · 北京时间 Asia/Shanghai · 约 1 分钟阅读</div>
-<div class="statline"><span class="pill">今日 4 件实质进展</span><span class="pill">官方原帖优先</span><span class="pill">仅新增事件</span></div>
-</header>
-<section aria-labelledby="main-head">
-<h2 id="main-head">全球四件大事</h2>
-<div class="news">
-<article class="item"><div class="k">01 / 模型与 Agent · Google 官方</div><h3>Gemini 4 Hydrogen 全面开放，Antigravity 引入多模型调度</h3>
-<p>Google 在美国时间 11 月 12 日发布 Gemini 4 Hydrogen，并向 Gemini API、AI Studio 等开放；按北京时间属于 11 月 13 日。API 每百万输入 / 输出 Token 为 <strong>$1.50 / $7.50</strong>；Antigravity 的 Orchestrator 可在 Carbon 与 Hydrogen 间分配任务，建议先用现有代码库对比质量、耗时及总成本，勿直接全量切换。</p>
-<div class="source">原始来源：<a href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-hydrogen/" target="_blank" rel="noopener noreferrer">Google 官方发布（美西 11/12）</a></div>
+<header class="hero"><div class="shell"><div class="kicker">AI ENGINEERING DAILY / 全球动态</div><h1>AI 工程简报</h1><p>2026 年 11 月 14 日，星期六 · 北京时间 Asia/Shanghai · 约 1 分钟阅读</p></div></header>
+<main class="shell">
+<p class="lead"><strong>今日 2 件重要新增。</strong>严格按北京时间归档：美国 11 月 13 日上午发布的产品，落在北京时间 11 月 14 日；其余前几天旧闻不重复。</p>
+<section class="items" aria-label="今日要闻">
+<article class="item">
+<div class="num">01 / AGENT × 支付 / 官方发布</div>
+<h2>OpenAI 上线 ChatGPT Wallet：AI Agent 获得经用户授权的付款能力</h2>
+<p>OpenAI 于美国时间 11 月 13 日发布、北京时间 11 月 14 日开始对应的新功能，允许 dots Agent 在用户逐笔审阅、经生物识别授权后用令牌化卡信息付款；首批仅面向符合条件的美国成年 Pro 用户，尚非全球开放。</p>
+<p><strong>工程影响：</strong>Agent 正从查询走向真实交易。电商与预订系统可评估 Web Bot Auth、风控识别、付款确认和审计日志；不应假定所有网站或账户均已支持。</p>
+<div class="source">原始来源：<a href="https://openai.com/index/introducing-chatgpt-wallet/" rel="noopener noreferrer" target="_blank">OpenAI 官方公告（11/13，美区）</a><a href="https://techcrunch.com/2026/11/13/chatgpts-new-wallet-lets-ai-agents-shop-and-check-out-for-you/" rel="noopener noreferrer" target="_blank">TechCrunch 发布时间：11/13 08:00 PST（北京 11/14 00:00）</a></div>
 </article>
-<article class="item"><div class="k">02 / 全球服务稳定性 · Anthropic 官方</div><h3>Claude API、Claude Code 与连接器出现跨产品故障</h3>
-<p>Anthropic 于今日 21:09（北京时间）开始调查 Claude API、Claude Code 等服务降级；22:36 更新称网页和 API 正在恢复，但 Docs/Sheets 等连接器、Managed Agents 仍受影响。生产调用建议监控错误率、启用限次重试和备用模型，不能将“恢复中”视为全部恢复。</p>
-<div class="source">原始来源：<a href="https://anthropic.statuspage.io/incidents/34wq7gxnxvvm" target="_blank" rel="noopener noreferrer">Claude 官方事故公告（11/13）</a></div>
+<article class="item">
+<div class="num">02 / 全球云服务 / 官方恢复确认</div>
+<h2>Microsoft 365 全球故障：11 月 14 日确认全面恢复</h2>
+<p>微软于北京时间今天对应的周六声明，已恢复此前受影响的全部客户与地区；故障波及 Outlook、Teams、Copilot，且连带影响 OpenAI、Anthropic 的 Microsoft 365 连接器。微软把原因归于网络容量升级相关的技术问题，否认网络攻击或 AI Agent 导致。</p>
+<p><strong>工程影响：</strong>依赖第三方办公连接器的 Agent 流程仍有单点故障风险。建议检查过去两天失败的邮件、日历与自动化任务，补做重试并设计降级通道。</p>
+<div class="source">原始来源：<a href="https://x.com/MSFT365Status/status/2121485746334777593" rel="noopener noreferrer" target="_blank">Microsoft 365 Status 官方恢复声明</a><a href="https://www.cbsnews.com/news/microsoft-battling-major-outage/" rel="noopener noreferrer" target="_blank">CBS / AP，11 月 14 日恢复报道</a></div>
 </article>
-<article class="item"><div class="k">03 / 算力与供应链 · Reuters 调查</div><h3>逾 32 亿美元中国 AI 算力项目依赖受限 NVIDIA 芯片</h3>
-<p>路透社北京时间 16:31 发布调查，梳理 150 余份资料，发现总额超 230 亿元人民币的项目及配套建设涉及受出口限制的 H100/H200/H800；金额并非全部为芯片采购。对依赖这些 GPU 的建设和交付，应核实合法可获得性、供货证明和国产替代的迁移成本。</p>
-<div class="source">媒体调查：<a href="https://www.reuters.com/world/china/huang-exit-us-scrutiny-imperil-3-billion-chinese-ai-projects-reliant-nvidia-2026-11-13/" target="_blank" rel="noopener noreferrer">Reuters 11/13 独家报道</a></div>
-</article>
-<article class="item"><div class="k">04 / 监管与安全 · Reuters 法律报道</div><h3>多家非营利组织起诉五家前沿 AI 企业，寻求暂停新模型开发</h3>
-<p>Reuters 于北京时间今日 02:23 报道：相关组织在美国加州起诉 OpenAI、Anthropic、Google、Meta 与 SpaceX AI 业务，要求法院限制前沿模型继续开发。<strong>这只是诉讼请求，并非法院禁令</strong>；工程团队应关注后续裁定，不必据此停止现有 API 集成。</p>
-<div class="source">法律报道：<a href="https://www.reuters.com/business/openai-google-anthropic-hit-with-lawsuit-seeking-halt-frontier-ai-development-2026-11-12/" target="_blank" rel="noopener noreferrer">Reuters 11/12 18:23 UTC（北京时间 11/13）</a></div>
-</article>
-</div>
 </section>
-<section aria-labelledby="limits-head">
-<h2 id="limits-head">OpenAI Pro 额度红线</h2>
-<div class="status"><strong>未恢复五小时限制。</strong> 截至本次核查，OpenAI 官方仍明确：Pro $100 / $200 / $500 的 Work 与 Codex 无五小时限额；套餐包含的周期额度仍适用。<a href="https://help.openai.com/en/articles/20001516-managing-usage-with-gpt-6-astra-in-work-and-codex" target="_blank" rel="noopener noreferrer">官方说明</a></div>
-</section>
-<footer><p>筛选规则：北京时间当天首次确认 / 披露；官方事实、媒体调查与未裁决指控严格区分。未纳入融资股价、旧闻和无实质变化的额度传闻。</p><p>离线阅读：本文全部样式内联，不依赖 CDN、外部字体或图片。外链仅用于核查原始来源。</p></footer>
+<section class="status" aria-label="额度红线"><h3>Codex / ChatGPT Work 额度状态</h3><p><strong>Pro $100 / $200 / $500：官方仍写明不设 5 小时使用上限。</strong>套餐包含的使用额度及周期限制依然存在。今日未查到官方宣布恢复 5 小时限制的消息；这不是新的额度政策。</p><div class="source"><a href="https://help.openai.com/en/articles/20001516-managing-usage-with-gpt-6-astra-in-work-and-codex" target="_blank" rel="noopener noreferrer">OpenAI Help Center · 当前 Work/Codex 用量规则</a></div></section>
+<section class="method"><h3>核查说明</h3><p>新闻以北京日界线为准；公开网页仅用于来源核验，不参与离线阅读。旧闻、单个用户体验反馈、尚未实施的政策猜测与版本号流水账均未入选。来源链接可能需要网络才能打开。</p></section>
 </main>
+<footer><div class="shell"><div class="links"><a href="https://yesichen374.github.io/ai-news/">晚报首页</a><a href="https://yesichen374.github.io/ai-news/2026-11-14.html">2026-11-14 归档</a></div><p>AI 工程简报 · 独立离线 HTML · 无第三方脚本、字体或图片</p></div></footer>
 </body>
 </html>
