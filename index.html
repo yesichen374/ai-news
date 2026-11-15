@@ -2,36 +2,29 @@
 <html lang="zh-CN">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="color-scheme" content="light dark">
-<title>AI 工程简报｜2026 年 11 月 14 日</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="dark light">
+<meta name="description" content="2026年11月15日 AI 工程简报：今日全球AI基础设施与供应链重大消息。">
+<title>AI 工程简报｜2026-11-15</title>
 <style>
-:root{font-family:system-ui,-apple-system,"Segoe UI","Microsoft YaHei",sans-serif;color:#172331;background:#f3f6fa;font-synthesis:none}*{box-sizing:border-box}body{margin:0}a{color:#2469ae;text-underline-offset:3px;overflow-wrap:anywhere}a:hover{text-decoration-thickness:2px}.shell{width:min(920px,calc(100% - 30px));margin:0 auto}.hero{background:linear-gradient(120deg,#142439,#224a70);color:#fff;padding:44px 0 38px}.kicker{text-transform:uppercase;letter-spacing:.2em;font-size:12px;opacity:.75}.hero h1{font-size:clamp(29px,5vw,43px);line-height:1.2;margin:12px 0}.hero p{margin:0;color:#dce8f4;font-size:14px;line-height:1.8}main{padding:27px 0 48px}.lead{font-size:16px;line-height:1.9;margin:0 0 20px;color:#405168}.items{display:grid;gap:15px}.item,.status,.method{background:#fff;border:1px solid #dde5ef;border-radius:15px;padding:22px 24px;box-shadow:0 7px 22px rgba(20,42,70,.04)}.num{display:inline-block;font-size:12px;letter-spacing:.06em;color:#446e99;font-weight:750;margin-bottom:7px}.item h2{font-size:clamp(20px,3.5vw,24px);line-height:1.42;margin:0 0 10px}.item p,.status p,.method p{font-size:15px;line-height:1.85;margin:0 0 10px}.source{border-top:1px solid #edf0f5;padding-top:10px;font-size:13px;color:#55687d;line-height:1.8}.source a{margin-right:12px}.status{margin-top:20px}.status h3,.method h3{font-size:17px;margin:0 0 8px}.status strong{color:#285a86}.method{margin-top:14px;background:transparent;box-shadow:none}.method p{font-size:13px;color:#68768b;margin:0}footer{padding:22px 0;border-top:1px solid #dce3eb;color:#6a788b;font-size:12px}.links{display:flex;gap:18px;flex-wrap:wrap}.links a{font-size:13px}@media(max-width:540px){.hero{padding:30px 0}.item,.status,.method{padding:19px}.shell{width:min(920px,calc(100% - 24px))}}@media(prefers-color-scheme:dark){:root{color:#e4eaf1;background:#0b131d}.hero{background:linear-gradient(120deg,#0e1d2d,#1b3c58)}.lead{color:#afbdd0}.item,.status{background:#14202d;border-color:#29384b;box-shadow:none}.method{border-color:#29384b}.source{border-color:#2a3a4c;color:#a7b5c8}a{color:#91c5fb}.status strong{color:#a7cffa}footer{border-color:#29384b;color:#a7b5c8}.method p{color:#adbacb}}@media print{:root{background:white;color:black}.hero{background:#fff;color:#000;padding:15px 0;border-bottom:2px solid #333}.hero p{color:#444}.item,.status,.method{box-shadow:none;break-inside:avoid}a{color:#222}}
+:root{color-scheme:dark;--bg:#0c111c;--surface:#151d2b;--text:#f0f4ff;--muted:#a5b2c5;--border:#2d3950;--accent:#8dc6ff;--warm:#dfc598}
+*{box-sizing:border-box}html{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Microsoft YaHei",Arial,sans-serif;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--text);line-height:1.74}main{max-width:800px;margin:0 auto;padding:38px 24px 64px}
+.header{border-bottom:1px solid var(--border);padding-bottom:25px}.eyebrow{font-size:12px;color:var(--accent);letter-spacing:.16em;font-weight:700}.date{font-size:13px;color:var(--muted);margin-top:8px}
+h1{font-size:clamp(29px,5vw,42px);letter-spacing:-.035em;line-height:1.22;margin:12px 0 10px}p{margin:.65em 0 0}.intro{font-size:15px;color:var(--muted)}
+.article{padding:25px 0;border-bottom:1px solid var(--border)}.kicker{color:var(--accent);font-size:12px;font-weight:700;letter-spacing:.06em;margin:0 0 7px}.article h2{font-size:19px;line-height:1.44;margin:0 0 10px;letter-spacing:-.018em}.article p{font-size:15px;color:#d5deec}
+.source{font-size:12px;margin-top:12px;color:var(--muted)}a{color:var(--accent);text-underline-offset:3px}a:hover{color:#c6e4ff}
+.status{margin-top:25px;border:1px solid var(--border);background:var(--surface);border-radius:12px;padding:18px 20px}.status h2{font-size:14px;margin:0 0 5px;color:var(--warm)}.status p{font-size:13px;color:#d5deec;margin:0}
+footer{font-size:12px;color:var(--muted);margin-top:30px}footer p{margin-top:8px}
+@media(max-width:540px){main{padding:26px 17px 50px}.article{padding:23px 0}.article h2{font-size:18px}.article p{font-size:14px}.status{padding:16px}h1{font-size:31px}}
+@media(prefers-color-scheme:light){:root{color-scheme:light;--bg:#f7f8fb;--surface:#ffffff;--text:#172236;--muted:#53657d;--border:#d9dfeb;--accent:#0755a0;--warm:#8d5d08}.article p,.status p{color:#324358}}
+@media print{:root{color-scheme:light;--bg:#fff;--surface:#fff;--text:#111;--muted:#555;--border:#ccc;--accent:#174c87;--warm:#75510d}main{padding:12mm;max-width:none}a{color:#174c87}}
 </style>
 </head>
-<body>
-<header class="hero"><div class="shell"><div class="kicker">AI ENGINEERING DAILY / 全球动态</div><h1>AI 工程简报</h1><p>2026 年 11 月 14 日，星期六 · 北京时间 Asia/Shanghai · 约 1 分钟阅读</p></div></header>
-<main class="shell">
-<p class="lead"><strong>今日 2 件重要新增。</strong>严格按北京时间归档：美国 11 月 13 日上午发布的产品，落在北京时间 11 月 14 日；其余前几天旧闻不重复。</p>
-<section class="items" aria-label="今日要闻">
-<article class="item">
-<div class="num">01 / AGENT × 支付 / 官方发布</div>
-<h2>OpenAI 上线 ChatGPT Wallet：AI Agent 获得经用户授权的付款能力</h2>
-<p>OpenAI 于美国时间 11 月 13 日发布、北京时间 11 月 14 日开始对应的新功能，允许 dots Agent 在用户逐笔审阅、经生物识别授权后用令牌化卡信息付款；首批仅面向符合条件的美国成年 Pro 用户，尚非全球开放。</p>
-<p><strong>工程影响：</strong>Agent 正从查询走向真实交易。电商与预订系统可评估 Web Bot Auth、风控识别、付款确认和审计日志；不应假定所有网站或账户均已支持。</p>
-<div class="source">原始来源：<a href="https://openai.com/index/introducing-chatgpt-wallet/" rel="noopener noreferrer" target="_blank">OpenAI 官方公告（11/13，美区）</a><a href="https://techcrunch.com/2026/11/13/chatgpts-new-wallet-lets-ai-agents-shop-and-check-out-for-you/" rel="noopener noreferrer" target="_blank">TechCrunch 发布时间：11/13 08:00 PST（北京 11/14 00:00）</a></div>
-</article>
-<article class="item">
-<div class="num">02 / 全球云服务 / 官方恢复确认</div>
-<h2>Microsoft 365 全球故障：11 月 14 日确认全面恢复</h2>
-<p>微软于北京时间今天对应的周六声明，已恢复此前受影响的全部客户与地区；故障波及 Outlook、Teams、Copilot，且连带影响 OpenAI、Anthropic 的 Microsoft 365 连接器。微软把原因归于网络容量升级相关的技术问题，否认网络攻击或 AI Agent 导致。</p>
-<p><strong>工程影响：</strong>依赖第三方办公连接器的 Agent 流程仍有单点故障风险。建议检查过去两天失败的邮件、日历与自动化任务，补做重试并设计降级通道。</p>
-<div class="source">原始来源：<a href="https://x.com/MSFT365Status/status/2121485746334777593" rel="noopener noreferrer" target="_blank">Microsoft 365 Status 官方恢复声明</a><a href="https://www.cbsnews.com/news/microsoft-battling-major-outage/" rel="noopener noreferrer" target="_blank">CBS / AP，11 月 14 日恢复报道</a></div>
-</article>
-</section>
-<section class="status" aria-label="额度红线"><h3>Codex / ChatGPT Work 额度状态</h3><p><strong>Pro $100 / $200 / $500：官方仍写明不设 5 小时使用上限。</strong>套餐包含的使用额度及周期限制依然存在。今日未查到官方宣布恢复 5 小时限制的消息；这不是新的额度政策。</p><div class="source"><a href="https://help.openai.com/en/articles/20001516-managing-usage-with-gpt-6-astra-in-work-and-codex" target="_blank" rel="noopener noreferrer">OpenAI Help Center · 当前 Work/Codex 用量规则</a></div></section>
-<section class="method"><h3>核查说明</h3><p>新闻以北京日界线为准；公开网页仅用于来源核验，不参与离线阅读。旧闻、单个用户体验反馈、尚未实施的政策猜测与版本号流水账均未入选。来源链接可能需要网络才能打开。</p></section>
-</main>
-<footer><div class="shell"><div class="links"><a href="https://yesichen374.github.io/ai-news/">晚报首页</a><a href="https://yesichen374.github.io/ai-news/2026-11-14.html">2026-11-14 归档</a></div><p>AI 工程简报 · 独立离线 HTML · 无第三方脚本、字体或图片</p></div></footer>
-</body>
-</html>
+<body><main>
+<header class="header"><div class="eyebrow">GLOBAL AI / ENGINEERING BRIEF</div><h1>AI 工程简报</h1><div class="date">2026 年 11 月 15 日 · 北京时间 · 周日</div><p class="intro">今日筛选 2 件重要新增，均为媒体调查或报道；未把尚在讨论的政策、客户洽谈写成已经落地的事实。</p></header>
+<article class="article"><div class="kicker">01 / AI 算力供应链 · 调查报道</div><h2>东南亚 GPU 云计算成为新一轮出口管制焦点</h2><p>《华尔街日报》11 月 15 日调查披露，马来西亚等地的数据中心向中国企业提供先进 NVIDIA 算力的跨境租用路径。报道称美国商务部正在考虑加强对马来西亚、印尼和新加坡先进芯片出口的许可要求，相关新规则<strong>尚未正式实施</strong>；依赖当地 GPU 云的项目应核查终端客户合规性，并准备算力区域替代方案。</p><div class="source">原始报道：<a href="https://www.wsj.com/tech/jensen-huang-backdoor-ai-data-centers-a5e4499d" rel="noopener noreferrer">The Wall Street Journal · 11/15</a>；事件相关公司声明：<a href="https://apnews.com/article/singapore-megaspeed-alice-huang-nvidia-probe-e9e2e18169dce0b30a34f39715bf35ed" rel="noopener noreferrer">AP · 11/15</a></div></article>
+<article class="article"><div class="kicker">02 / 数据中心竞争 · 媒体报道</div><h2>三星谋求一体化 AI 基础设施，传与两大模型厂商洽谈</h2><p>《金融时报》11 月 15 日报道，三星正尝试整合存储芯片、建设、冷却和数据中心运营能力，旗下 Samsung SDS 与 OpenAI、Anthropic 就潜在数据中心租赁进行<strong>初步洽谈</strong>。尚无签约、算力规模或投产时间的官方确认；采购或部署决策不应把洽谈视为新增可用产能。</p><div class="source">原始报道：<a href="https://www.ft.com/content/ee5b23b3-89b3-41f7-9158-56c1586759c2" rel="noopener noreferrer">Financial Times · 11/15</a></div></article>
+<section class="status" aria-label="OpenAI 额度红线监测"><h2>OpenAI Work / Codex 额度状态</h2><p>截至本次核查，官方帮助中心仍写明 Pro $100 / $200 / $500 不设五小时限额，但继续受周期总额度限制；未发现正式恢复五小时上限的公告。<a href="https://help.openai.com/en/articles/20001516-managing-usage-with-gpt-6-astra-in-work-and-codex" rel="noopener noreferrer">核对官方规则</a></p></section>
+<footer><p>筛选标准：只统计北京时间 11 月 15 日的首次实质披露；不重复昨日模型发布、股价和版本号流水账。报道、指控、计划与已实施政策严格区分。</p><p>本文件正文和样式内置，可离线阅读。外部链接仅供核查来源。</p></footer>
+</main></body></html>
