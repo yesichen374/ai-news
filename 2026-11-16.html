@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>AI 工程简报｜2026 年 11 月 16 日</title>
+<style>
+:root{font-family:system-ui,-apple-system,"Segoe UI","Microsoft YaHei",sans-serif;color-scheme:light dark;--bg:#f4f6fa;--paper:#fff;--ink:#162035;--muted:#69768b;--line:#e0e6ee;--blue:#2b60ca;--soft:#e9f1ff}
+@media(prefers-color-scheme:dark){:root{--bg:#101722;--paper:#192434;--ink:#eaf0fb;--muted:#a1aec1;--line:#354257;--blue:#8cb5ff;--soft:#253c5a}}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font-size:15px;line-height:1.7}main{max-width:800px;margin:0 auto;padding:38px 22px 52px}header{padding:0 0 25px;border-bottom:1px solid var(--line)}.eyebrow{font-size:12px;letter-spacing:1.4px;color:var(--blue);font-weight:750}h1{font-size:clamp(26px,4.5vw,38px);line-height:1.23;margin:12px 0 10px;letter-spacing:-.6px}.desc{color:var(--muted);margin:0}.articles{display:grid;gap:14px;margin:25px 0}.story{padding:22px 24px;border:1px solid var(--line);border-radius:16px;background:var(--paper)}.top{display:flex;align-items:center;justify-content:space-between;gap:12px}.num{font-size:12px;font-weight:700;color:var(--blue);letter-spacing:.8px}.tag{font-size:11px;color:var(--muted)}h2{font-size:19px;line-height:1.45;margin:10px 0 9px}p{margin:7px 0}.action{border-left:3px solid var(--blue);padding-left:11px;margin-top:12px}a{color:var(--blue);text-decoration:none;border-bottom:1px solid currentColor}a:hover{text-decoration:none;opacity:.8}.source{font-size:12px;color:var(--muted);margin-top:13px}.status{border-top:1px solid var(--line);padding-top:20px;margin-top:19px}.status h2{font-size:16px}.status p{font-size:14px}.pill{display:inline-block;border-radius:12px;background:var(--soft);color:var(--blue);padding:2px 9px;font-size:11px;font-weight:700}footer{margin-top:32px;font-size:12px;color:var(--muted)}@media(max-width:560px){main{padding:24px 14px 38px}.story{padding:17px 17px;border-radius:12px}.articles{gap:11px}.top{align-items:flex-start}h2{font-size:17px}}
+</style>
+</head>
+<body>
+<main>
+<header><div class="eyebrow">AI ENGINEERING BRIEF · 北京时间</div><h1>AI 工程简报<br>2026 年 11 月 16 日</h1><p class="desc">今天 3 件全球重要新增 · 核对官方公告与独立报道 · 约 1 分钟读完</p></header>
+<section class="articles" aria-label="当日要闻">
+<article class="story"><div class="top"><span class="num">01 / 政策与算力</span><span class="tag">路透社 · 11 月 16 日</span></div><h2>美国发布针对第三国数据中心的先进 AI 芯片新限制</h2><p>美国政府发布新规则，限制海外数据中心向中国企业提供先进美国 AI 芯片的远程训练算力，并要求新加坡、泰国、马来西亚、印尼、巴西有关企业申请最先进芯片的美国出口许可。</p><p class="action"><strong>工程影响：</strong>在采购海外 GPU 云、签订算力合同前核查服务商许可、客户适用范围及合规承诺；不要将规则发布等同于所有在用服务已立即中断。</p><p class="source">来源：<a href="https://www.reuters.com/legal/litigation/us-issues-rule-protect-advanced-ai-chips-being-accessed-remotely-2026-11-16/" target="_blank" rel="noopener noreferrer">Reuters｜2026-11-16 13:46 UTC</a></p></article>
+<article class="story"><div class="top"><span class="num">02 / 前沿模型</span><span class="tag">阿里巴巴官方 · 11 月 16 日</span></div><h2>Qwen4-Max 正式上线 API，提供百万 Token 上下文</h2><p>阿里巴巴发布 Qwen4-Max：2.4 万亿总参数、原生图像理解、100 万 Token 上下文，并已提供 API 调用。阿里云新加坡区标价每百万输入 / 输出 Token 为 US$1.50 / US$4.50；性能和降本幅度仍主要来自厂商自测。</p><p class="action"><strong>工程影响：</strong>可在现有 OpenAI / Anthropic 兼容接口上做独立 A/B 测试，重点测代码修改正确率、工具调用、长上下文成本和区域可用性。</p><p class="source">来源：<a href="https://www.alibabacloud.com/blog/alibaba-unveils-qwen4-max-new-ai-teammate-for-work-creativity-and-discovery_603783" target="_blank" rel="noopener noreferrer">阿里巴巴官方发布</a> · <a href="https://www.alibabacloud.com/help/en/model-studio/qwen4-max" target="_blank" rel="noopener noreferrer">官方模型文档</a> · <a href="https://www.alibabacloud.com/help/en/model-studio/model-pricing" target="_blank" rel="noopener noreferrer">官方价格表</a></p></article>
+<article class="story"><div class="top"><span class="num">03 / 国际 AI 供应链</span><span class="tag">路透社 · 11 月 16 日</span></div><h2>美国与九个伙伴签署 AI 供应链安全合作宣言</h2><p>美国、英国、日本、韩国、印度、新加坡等十方签署《旧金山宣言》，拟在 AI 政策、供应链安全、基础设施韧性等领域设立合作工作组。当前是合作宣言，不是立即生效的统一出口管制法规。</p><p class="action"><strong>工程影响：</strong>跨境部署和 AI 芯片采购团队应跟进后续工作组产生的具体规则，暂不依据宣言自行推断限制或新增合规义务。</p><p class="source">来源：<a href="https://www.reuters.com/world/china/us-allies-team-up-protect-ai-tech-infrastructure-amid-china-rivalry-2026-11-16/" target="_blank" rel="noopener noreferrer">Reuters｜2026-11-16 09:00 UTC</a></p></article>
+</section>
+<section class="status"><h2>固定监测 · Pro 五小时限额 <span class="pill">未恢复</span></h2><p>截至本期核查，OpenAI 官方文档仍明确写明 Pro 100 / Pro 200 / Pro 500 的 Work 与 Codex 不受五小时使用限制，但仍有套餐内总额度。<a href="https://help.openai.com/en/articles/20001516-managing-usage-with-gpt-6-astra-in-work-and-codex" target="_blank" rel="noopener noreferrer">OpenAI 官方说明</a></p></section>
+<footer>新闻日期按 Asia/Shanghai 认定。仅包含截至北京时间 2026-11-16 22:36 已核实的新增；报道与厂商自述均按来源标注。此页面 CSS 和正文均内联，可离线阅读，外部链接仅供来源核查。</footer>
+</main>
+</body>
+</html>
