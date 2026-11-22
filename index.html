@@ -4,77 +4,23 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="color-scheme" content="light dark">
-<meta name="description" content="2026年11月21日 AI 工程简报：美国海外AI数据中心惩罚性税收表态、联合国自主武器监管谈判。">
-<title>AI 工程简报｜2026年11月21日</title>
+<meta name="description" content="2026年11月22日 AI工程简报：严格核查全球AI重大新增，今日无达到入选门槛的确证新事件；Pro额度红线监测。">
+<title>AI 工程简报｜2026 年 11 月 22 日</title>
 <style>
-:root{color-scheme:light;--bg:#f4f6fa;--surface:#fff;--ink:#18273c;--muted:#627187;--line:#dfe6ef;--blue:#2357c6;--soft:#eaf0ff;--marker:#d8e6ff;--shadow:0 10px 34px rgba(17,45,85,.05)}
-:root[data-theme="dark"]{color-scheme:dark;--bg:#0c1423;--surface:#172236;--ink:#eaf0fa;--muted:#a9b8cb;--line:#304057;--blue:#94b8ff;--soft:#243653;--marker:#29456b;--shadow:none}
-@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){color-scheme:dark;--bg:#0c1423;--surface:#172236;--ink:#eaf0fa;--muted:#a9b8cb;--line:#304057;--blue:#94b8ff;--soft:#243653;--marker:#29456b;--shadow:none}}
-*{box-sizing:border-box}
-html{scroll-behavior:smooth}
-body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.75 -apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Microsoft YaHei",sans-serif}
-a{color:var(--blue);text-decoration-thickness:1px;text-underline-offset:4px}
-a:focus-visible,button:focus-visible{outline:3px solid var(--blue);outline-offset:4px}
-.page{max-width:900px;margin:auto;padding:28px 22px 64px}
-.toolbar{display:flex;align-items:center;justify-content:space-between;gap:16px;margin:0 0 17px}
-.brand{font-weight:850;letter-spacing:.13em;color:var(--muted);font-size:11px}
-.toggle{font:inherit;font-size:12px;padding:7px 14px;border-radius:50px;border:1px solid var(--line);background:var(--surface);color:var(--muted);cursor:pointer}
-.hero,.story,.status{background:var(--surface);border:1px solid var(--line);box-shadow:var(--shadow)}
-.hero{border-radius:22px;padding:36px 40px}
-.kicker{font-size:12px;color:var(--blue);font-weight:800;letter-spacing:.12em}
-h1{margin:10px 0 14px;letter-spacing:-.035em;font-size:clamp(30px,5vw,45px);line-height:1.25}
-.hero .date{margin:0;color:var(--muted);font-size:15px}
-.labels{display:flex;gap:8px;flex-wrap:wrap;margin-top:24px}
-.label{font-size:12px;font-weight:700;background:var(--soft);color:var(--blue);border-radius:30px;padding:4px 12px}
-.sec-head{display:flex;align-items:baseline;gap:12px;margin:28px 0 14px}
-.sec-head h2{font-size:13px;color:var(--muted);letter-spacing:.12em;margin:0;text-transform:uppercase}
-.sec-head span{font-size:12px;color:var(--muted)}
-.story{border-radius:18px;padding:27px 31px;margin-bottom:14px}
-.story-top{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:10px}
-.number{display:inline-grid;place-items:center;min-width:34px;height:34px;background:var(--marker);border-radius:9px;color:var(--blue);font-weight:800;font-size:13px}
-.category{font-size:12px;color:var(--muted);font-weight:650}
-.story h3{font-size:21px;line-height:1.42;margin:0 0 12px;letter-spacing:-.02em}
-.story p{font-size:15px;margin:0 0 14px}
-.source{display:flex;gap:14px;flex-wrap:wrap;font-size:13px;font-weight:700}
-.status{border-radius:17px;padding:21px 27px}
-.status p{font-size:14px;color:var(--muted);margin:0}
-.status b{color:var(--ink)}
-.bottom{font-size:12px;color:var(--muted);text-align:center;margin:28px 0 0}
-.bottom p{margin:5px 0}
-@media(max-width:600px){.page{padding:17px 12px 39px}.hero{padding:25px 21px;border-radius:18px}.story{padding:22px 20px}.story h3{font-size:19px}.status{padding:18px 19px}.sec-head{margin-top:25px}.toolbar{padding:0 2px}}
-@media print{body{background:#fff;color:#000}.page{max-width:100%;padding:0}.toggle{display:none}.hero,.story,.status{box-shadow:none;break-inside:avoid;border-color:#ccc}a{color:#174ea6}}
+:root{color-scheme:light dark;--bg:#f3f6fb;--paper:#fff;--text:#162238;--muted:#607087;--border:#dfe6f0;--accent:#2155ce;--soft:#eaf1ff}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--text);font:16px/1.7 -apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Microsoft YaHei",sans-serif}
+main{width:min(850px,100%);margin:auto;padding:38px 20px 56px}.hero,.panel{background:var(--paper);border:1px solid var(--border);border-radius:19px}.hero{padding:31px 34px}.eyebrow{color:var(--accent);font-size:12px;font-weight:800;letter-spacing:.13em}h1{font-size:clamp(30px,5vw,43px);line-height:1.22;letter-spacing:-.04em;margin:11px 0 13px}h2{font-size:20px;margin:0 0 9px}p{margin:0 0 12px}.sub{color:var(--muted);font-size:14px}.meta{display:flex;flex-wrap:wrap;gap:9px;margin-top:18px}.chip{background:var(--soft);color:var(--accent);border-radius:100px;padding:5px 12px;font-size:12px;font-weight:750}.section{margin:25px 0 11px;font-size:12px;letter-spacing:.1em;font-weight:800;color:var(--muted)}.panel{padding:24px 29px;margin-bottom:13px}.headline{font-size:clamp(22px,4vw,29px);font-weight:800;letter-spacing:-.02em;line-height:1.4}.panel p:last-child{margin-bottom:0}.quiet{color:var(--muted);font-size:14px}.watch{border-left:4px solid var(--accent)}a{color:var(--accent);text-underline-offset:3px}a:hover{text-decoration-thickness:2px}.source{font-size:13px;font-weight:700}footer{color:var(--muted);font-size:12px;text-align:center;margin-top:28px;line-height:1.8}
+@media(prefers-color-scheme:dark){:root{--bg:#0c1525;--paper:#17233a;--text:#edf3fe;--muted:#acbdd4;--border:#2a3b54;--accent:#a1c1ff;--soft:#263c64}}
+@media(max-width:580px){main{padding:14px 12px 36px}.hero{padding:24px 20px}.panel{padding:20px 19px}.section{margin-top:23px}}
 </style>
 </head>
-<body>
-<main class="page">
-<div class="toolbar"><span class="brand">AI ENGINEERING BRIEF · DAILY</span><button id="theme-toggle" class="toggle" type="button" aria-label="切换明暗主题">切换明暗</button></div>
-<header class="hero">
-<div class="kicker">GLOBAL AI · ENGINEERING IMPACT</div>
-<h1>AI 工程简报</h1>
-<p class="date"><time datetime="2026-11-21">2026 年 11 月 21 日</time> · 北京时间 · 约 1 分钟阅读</p>
-<div class="labels"><span class="label">今日 2 件重大新增</span><span class="label">监管与算力基础设施</span><span class="label">宁缺毋滥</span></div>
-</header>
-<section aria-labelledby="signals"><div class="sec-head"><h2 id="signals">今日全球重点</h2><span>按国际影响力排序</span></div>
-<article class="story">
-<div class="story-top"><span class="number">01</span><span class="category">公开表态 · 路透社 / AP · 北京时间 11 月 21 日 02:08 报道</span></div>
-<h3>美国总统提出惩罚海外 AI 数据中心建设</h3>
-<p>美国总统特朗普在白宫表示，将对美国企业在海外建设数据中心征收“高额税收”或施加惩罚；路透社于 11 月 20 日 18:08 UTC 报道，对应北京时间 21 日 02:08。<strong>目前只是政策表态，尚未公布税率、法律文本或执行机制</strong>。如果落实，可能改变全球 GPU 云区域布局及低延迟服务成本；跨境算力项目应先梳理数据中心所在地、供应商合同和替代区域，不把表态视为已经生效的禁令。</p>
-<div class="source"><a target="_blank" rel="noopener noreferrer" href="https://www.reuters.com/technology/trump-says-us-penalize-firms-building-data-centers-abroad-2026-11-20/">Reuters 原始报道</a><a target="_blank" rel="noopener noreferrer" href="https://apnews.com/article/trump-artificial-intelligence-data-centers-f1ac03b73d13445400eeed8631d9d879">AP 独立核实</a></div>
-</article>
-<article class="story">
-<div class="story-top"><span class="number">02</span><span class="category">国际谈判结果 · 路透社 · 北京时间 11 月 21 日 13:36 报道</span></div>
-<h3>联合国自主武器谈判达成妥协，目标 2028 年继续制定规则</h3>
-<p>《特定常规武器公约》相关国家在日内瓦通宵谈判后，同意未来两年继续制定自主武器规则，但<strong>未就具有法律约束力的国际条约达成一致</strong>，美国、俄罗斯及以色列等反对具有约束力的方案。此事意味着高风险自主决策的国际治理仍有重大分歧；涉及无人系统、目标识别及双用途 AI 的工程团队应维持人工授权、决策留痕与明确的安全边界，不能把谈判成果理解成已生效的新法规。</p>
-<div class="source"><a target="_blank" rel="noopener noreferrer" href="https://www.reuters.com/world/states-agree-to-un-talks-aiming-regulate-killer-robots-by-2028-2026-11-21/">Reuters 原始报道</a></div>
-</article>
-</section>
-<section aria-labelledby="watch"><div class="sec-head"><h2 id="watch">Pro 额度红线</h2><span>不占新闻名额</span></div>
-<div class="status"><p><b>Pro $100 / $200 / $500：</b>截至 11 月 21 日，OpenAI 官方帮助文档仍明确表示，Codex / ChatGPT Work <b>没有五小时用量上限</b>，但共享套餐使用额度与周额度仍适用。未发现官方确认恢复五小时限额。<a target="_blank" rel="noopener noreferrer" href="https://help.openai.com/en/articles/20001516-managing-usage-with-gpt-6-astra-in-work-and-codex">OpenAI 官方说明</a></p></div>
-</section>
-<footer class="bottom"><p>只记录北京时间当日新增或首次披露事件；报道、表态、实施中的政策严格区分。</p><p>© AI 工程简报 · <a href="https://yesichen374.github.io/ai-news/">首页</a> · <a href="https://yesichen374.github.io/ai-news/2026-11-21.html">本期归档</a></p></footer>
-</main>
-<script>
-(function(){var b=document.getElementById("theme-toggle");try{var v=localStorage.getItem("ai-brief-theme");if(v==="dark"||v==="light")document.documentElement.setAttribute("data-theme",v)}catch(e){}b.addEventListener("click",function(){var root=document.documentElement;var current=root.getAttribute("data-theme");var dark=current?current==="dark":window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;var next=dark?"light":"dark";root.setAttribute("data-theme",next);try{localStorage.setItem("ai-brief-theme",next)}catch(e){}})})();
-</script>
-</body>
-</html>
+<body><main>
+<header class="hero"><div class="eyebrow">AI ENGINEERING BRIEF · DAILY</div><h1>AI 工程简报</h1><p>2026 年 11 月 22 日 · 北京时间</p><p class="sub">全球影响优先，严格按事件首次披露日期筛选 · 约 1 分钟</p><div class="meta"><span class="chip">今日 0 件达标新增</span><span class="chip">宁缺毋滥</span><span class="chip">工程与交付视角</span></div></header>
+<div class="section">TODAY'S SIGNAL · 当日结论</div>
+<section class="panel"><div class="headline">今日无重大新增</div><p>截至北京时间 11 月 22 日晚间，核对全球领先模型厂商、算力供应链、Agent/API 平台及监管安全消息，尚未确认有<strong>今天首次实质披露、且达到全球行业影响门槛</strong>的新事件。因此不将前两日的新闻重新包装成今天发布，也不为凑满四条降低标准。</p><p class="quiet">工程行动：现有模型选型与部署计划暂无基于今天新增新闻的紧急调整事项；继续以官方可用性、性能实测和供应链合规为依据。</p></section>
+<div class="section">DATE CHECK · 排除旧闻</div>
+<section class="panel"><p><strong>11 月 21 日：</strong>Lean/Mathlib 社区已发表关于 Claude 辅助黎曼猜想形式化证明的联合核查声明。这是值得持续关注的重大研究进展，但声明并非 22 日首发，不计入今天的新增新闻。<a class="source" href="https://leanprover-community.github.io/blog/posts/riemann-hypothesis/" target="_blank" rel="noopener noreferrer">原始声明 ↗</a></p><p><strong>11 月 20 日：</strong>腾讯 Hy4 开放模型权重；同样不重复算作 22 日发布。<a class="source" href="https://huggingface.co/tencent/Hy4" target="_blank" rel="noopener noreferrer">原始模型仓库 ↗</a></p></section>
+<div class="section">WATCHLIST · PRO 额度红线</div>
+<section class="panel watch"><h2>Pro $100 / $200 / $500</h2><p>OpenAI 官方当前明确说明：<strong>ChatGPT Work 和 Codex 暂无五小时限额</strong>；仍有套餐包含的使用额度及其他适用限制。尚未发现今天官方确认恢复五小时限额的消息，因此不占重大新闻名额。</p><p class="source"><a href="https://help.openai.com/en/articles/20001516-managing-usage-with-gpt-6-astra-in-work-and-codex" target="_blank" rel="noopener noreferrer">OpenAI 官方额度说明 ↗</a></p></section>
+<footer><p>本期仅依据可追溯资料记录当日新增；网页中链接用于核查来源，页面主体可完全离线阅读。</p><p><a href="https://yesichen374.github.io/ai-news/">简报首页</a> · <a href="https://yesichen374.github.io/ai-news/2026-11-22.html">2026-11-22 归档</a></p></footer>
+</main></body></html>
