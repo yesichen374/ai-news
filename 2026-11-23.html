@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<meta name="description" content="AI 工程简报｜2026年11月23日：GLM-5.4、银行Agent权限控制、NVIDIA合规治理、生成式AI诉讼。">
+<title>AI 工程简报｜2026年11月23日</title>
+<style>
+:root{color-scheme:light dark;--bg:#f5f7fb;--panel:#fff;--ink:#142238;--muted:#596b82;--border:#dde5ee;--primary:#274fd0;--tint:#eaf0ff;--label:#f0f3f8}
+:root[data-theme=dark]{color-scheme:dark;--bg:#0c1423;--panel:#142237;--ink:#ecf2fc;--muted:#adbbd1;--border:#2b3e57;--primary:#9cbaff;--tint:#223554;--label:#1c3048}
+:root[data-theme=light]{color-scheme:light}
+@media(prefers-color-scheme:dark){:root:not([data-theme]){--bg:#0c1423;--panel:#142237;--ink:#ecf2fc;--muted:#adbbd1;--border:#2b3e57;--primary:#9cbaff;--tint:#223554;--label:#1c3048}}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.75 -apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Microsoft YaHei",sans-serif}a{color:var(--primary);text-decoration-thickness:1px;text-underline-offset:3px}button{cursor:pointer;font:inherit}main{max-width:920px;margin:0 auto;padding:36px 22px 55px}.hero{border-radius:23px;padding:31px 36px;background:var(--panel);border:1px solid var(--border)}.heroTop{display:flex;justify-content:space-between;align-items:center;gap:12px}.kicker{font-size:12px;font-weight:850;letter-spacing:.13em;color:var(--primary)}.switch{border:1px solid var(--border);color:var(--ink);background:var(--label);border-radius:999px;padding:4px 13px;font-size:12px}h1{font-size:clamp(29px,5vw,41px);letter-spacing:-.035em;line-height:1.25;margin:13px 0 11px}p{margin:0}.lead{color:var(--muted);font-size:14px}.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:20px}.chip{padding:4px 12px;border-radius:999px;background:var(--tint);font-size:12px;color:var(--primary);font-weight:750}section{margin-top:28px}.sectionTitle{color:var(--muted);font-size:12px;letter-spacing:.13em;font-weight:850;margin:0 0 13px}.story{background:var(--panel);border:1px solid var(--border);border-radius:18px;padding:24px 27px;margin-bottom:13px}.storyTop{display:flex;align-items:center;gap:12px;font-size:12px;color:var(--muted)}.number{font-weight:850;color:var(--primary)}h2{font-size:20px;line-height:1.45;letter-spacing:-.013em;margin:10px 0}.story p{font-size:14px;line-height:1.82}.source{display:inline-block;margin-top:11px;font-weight:720;font-size:12px}.watch{background:var(--panel);border:1px solid var(--border);border-radius:17px;padding:20px 25px;font-size:14px}.watch strong{color:var(--ink)}.watch p{color:var(--muted)}.watch a{white-space:nowrap}footer{padding:25px 8px 0;text-align:center;color:var(--muted);font-size:12px}footer p+p{margin-top:6px}footer a{margin:0 5px}
+@media(max-width:600px){main{padding:12px 11px 30px}.hero{padding:22px 19px;border-radius:17px}.story{padding:20px 18px;border-radius:15px}h2{font-size:18px}.watch{padding:18px}.story p{font-size:14px}}
+</style>
+</head>
+<body>
+<main>
+<header class="hero">
+<div class="heroTop"><div class="kicker">AI ENGINEERING BRIEF · DAILY</div><button class="switch" id="themeBtn" type="button" aria-label="切换明暗主题">切换明暗</button></div>
+<h1>AI 工程简报</h1>
+<p class="lead">2026 年 11 月 23 日 · 北京时间｜全球 AI 重大变化，约 1 分钟读完</p>
+<div class="chips"><span class="chip">今日 4 件</span><span class="chip">新发布与首次披露</span><span class="chip">工程开发与交付</span></div>
+</header>
+<section aria-label="今日重大动态">
+<h2 class="sectionTitle">TODAY'S SIGNALS · 按全球工程影响排序</h2>
+<article class="story">
+<div class="storyTop"><span class="number">01</span><span>厂商官方发布 · 11 月 23 日</span></div>
+<h2>智谱 Z.ai 发布 GLM-5.4：旗舰模型采用循环式 Transformer</h2>
+<p>官方宣布在约 750B 参数规模上复用 28 层网络进行两轮推理，以增加计算深度而非单纯增加参数；今日可在 GLM Coding Plan、ZCode 和 Z.ai Chat 试用。标准 API 尚未开放、模型权重也尚未发布；工程团队可先用真实代码仓库测试长链推理与速度，不要将厂商演示等同于独立测评。</p>
+<a class="source" href="https://z.ai/blog/glm-5.4" target="_blank" rel="noopener noreferrer">Z.ai｜官方技术公告 ↗</a>
+</article>
+<article class="story">
+<div class="storyTop"><span class="number">02</span><span>路透独家 · 11 月 23 日 18:01 北京时间</span></div>
+<h2>美国多家银行收紧 AI Agent 的访问凭据与运行权限</h2>
+<p>路透首次披露，多家银行正在缩短 Agent 可自主工作的时间、隔离关键系统和凭据，并强化终止开关及应急业务流程；这是机构实践披露，并非新的统一法规。企业 Agent 接入 MES、数据库或生产设备前，应落实最小权限、操作日志、超时限制和人工审批。</p>
+<a class="source" href="https://www.reuters.com/legal/litigation/some-us-banks-tighten-ai-agent-controls-concern-about-models-escaping-safeguards-2026-11-23/" target="_blank" rel="noopener noreferrer">Reuters｜银行 Agent 安全控制调查 ↗</a>
+</article>
+<article class="story">
+<div class="storyTop"><span class="number">03</span><span>公司决定，路透核实 · 11 月 23 日 21:59 北京时间</span></div>
+<h2>NVIDIA 宣布黄仁勋恢复 CEO 职务，同步强化出口合规审查</h2>
+<p>路透确认 NVIDIA 董事会当天决定恢复黄仁勋 CEO 职务，并继续调查出口管制与潜在安全风险、寻聘新的首席合规官。全球 AI 芯片供应链治理出现重大人事转折，但此举不代表对华 GPU 出口限制已解除；采购团队仍应按现行许可核查交付。</p>
+<a class="source" href="https://www.reuters.com/technology/nvidia-reinstates-jensen-huang-ceo-2026-11-23/" target="_blank" rel="noopener noreferrer">Reuters｜NVIDIA 董事会决定 ↗</a>
+</article>
+<article class="story">
+<div class="storyTop"><span class="number">04</span><span>路透报道 · 11 月 23 日 20:08 北京时间</span></div>
+<h2>美国两州首次就 Grok 不当图像生成提起州政府诉讼</h2>
+<p>路透报道，弗吉尼亚州和俄勒冈州以消费者保护法律起诉 Grok 所属企业，指控其未充分阻止未经同意的性化图像与儿童性虐待材料生成；诉讼指控尚非司法裁定。这是生成式 AI 安全责任的重大执法进展，图像产品需要强化生成和编辑双端防护、滥用追踪及响应机制。</p>
+<a class="source" href="https://www.reuters.com/legal/government/virginia-oregon-sue-musks-spacex-over-grok-ais-creation-child-sexual-abuse-2026-11-23/" target="_blank" rel="noopener noreferrer">Reuters｜两州诉讼报道 ↗</a>
+</article>
+</section>
+<section aria-label="Pro额度监测">
+<h2 class="sectionTitle">WATCHLIST · PRO 额度红线</h2>
+<div class="watch"><p><strong>Pro $100 / $200 / $500：</strong>截至 11 月 23 日，OpenAI 官方仍明确表示 Work / Codex <strong>没有五小时使用限额</strong>，现有套餐总额度仍适用；本日未确认恢复五小时限制。<a href="https://help.openai.com/en/articles/20001516-managing-usage-with-gpt-6-astra-in-work-and-codex" target="_blank" rel="noopener noreferrer">官方说明 ↗</a></p></div>
+</section>
+<footer><p>官方公告与 Reuters 交叉核查；区分正式开放、媒体报道与未裁定指控。仅当日新事件，不含股价融资或 Reset 预测。</p><p><a href="https://yesichen374.github.io/ai-news/">简报首页</a> · <a href="https://yesichen374.github.io/ai-news/2026-11-23.html">2026-11-23 归档</a></p></footer>
+</main>
+<script>
+(function(){var b=document.getElementById('themeBtn');b.addEventListener('click',function(){var r=document.documentElement;var dark=r.dataset.theme==='dark'||(!r.dataset.theme&&window.matchMedia&&window.matchMedia('(prefers-color-scheme: dark)').matches);r.dataset.theme=dark?'light':'dark';});})();
+</script>
+</body>
+</html>
